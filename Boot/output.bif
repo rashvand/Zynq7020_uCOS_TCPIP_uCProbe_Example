@@ -1,0 +1,8 @@
+//arch = zynq; split = false; format = MCS
+the_ROM_image:
+{
+	[bootloader]D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\FSBL\Debug\FSBL.elf
+	D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\Main_Card_wrapper_hw_platform_0\Main_Card_wrapper.bit
+	D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\Relay_Main_Card____Core_0\Debug\Relay_Main_Card____Core_0.elf
+	D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\Relay_Main_Card____Core_1\Debug\Relay_Main_Card____Core_1.elf
+}

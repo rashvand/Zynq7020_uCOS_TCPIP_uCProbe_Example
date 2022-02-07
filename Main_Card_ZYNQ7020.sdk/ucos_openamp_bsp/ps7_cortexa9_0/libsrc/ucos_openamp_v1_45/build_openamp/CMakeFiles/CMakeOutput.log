@@ -1,0 +1,30 @@
+The target system is: uCOS -  - arm
+The host system is: Windows - 6.2 - AMD64
+Determining if files stdatomic.h exist passed with the following output:
+Change Dir: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Xilinx/SDK/2019.1/gnuwin/bin/make.exe" "cmTC_fcecc/fast"
+D:/Xilinx/SDK/2019.1/gnuwin/bin/make.exe -f CMakeFiles/cmTC_fcecc.dir/build.make CMakeFiles/cmTC_fcecc.dir/build
+make.exe[1]: Entering directory 'D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fcecc.dir/CheckIncludeFiles.c.obj
+D:/Xilinx/SDK/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe   -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS -ID:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/include -Wall -Wextra -c   -o CMakeFiles/cmTC_fcecc.dir/CheckIncludeFiles.c.obj   -c D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_fcecc
+D:/Xilinx/SDK/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe  -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS -ID:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/include -Wall -Wextra -c    "CMakeFiles/cmTC_fcecc.dir/CheckIncludeFiles.c.obj"   -o cmTC_fcecc  
+arm-none-eabi-gcc.exe: warning: CMakeFiles/cmTC_fcecc.dir/CheckIncludeFiles.c.obj: linker input file unused because linking not done
+make.exe[1]: Leaving directory 'D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp/CMakeFiles/CMakeTmp'
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Xilinx/SDK/2019.1/gnuwin/bin/make.exe" "cmTC_2b3b8/fast"
+D:/Xilinx/SDK/2019.1/gnuwin/bin/make.exe -f CMakeFiles/cmTC_2b3b8.dir/build.make CMakeFiles/cmTC_2b3b8.dir/build
+make.exe[1]: Entering directory 'D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2b3b8.dir/CheckIncludeFiles.c.obj
+D:/Xilinx/SDK/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe   -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS -ID:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/include -Wall -Wextra -c   -o CMakeFiles/cmTC_2b3b8.dir/CheckIncludeFiles.c.obj   -c D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_2b3b8
+D:/Xilinx/SDK/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe  -O2 -c -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS -ID:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/include -Wall -Wextra -c    "CMakeFiles/cmTC_2b3b8.dir/CheckIncludeFiles.c.obj"   -o cmTC_2b3b8  
+arm-none-eabi-gcc.exe: warning: CMakeFiles/cmTC_2b3b8.dir/CheckIncludeFiles.c.obj: linker input file unused because linking not done
+make.exe[1]: Leaving directory 'D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp/CMakeFiles/CMakeTmp'
+
+

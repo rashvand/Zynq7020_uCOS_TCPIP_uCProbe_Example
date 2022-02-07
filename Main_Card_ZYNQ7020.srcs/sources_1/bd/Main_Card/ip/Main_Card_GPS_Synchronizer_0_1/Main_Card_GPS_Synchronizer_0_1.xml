@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>Main_Card_GPS_Synchronizer_0_1</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S00_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">150</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.DATA_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PROTOCOL</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL">AXI4LITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.ID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ADDR_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH">10</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>AWUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ARUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.RUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>BUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_WRITE_MODE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE">READ_WRITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_BURST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_LOCK</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_LOCK">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_PROT</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_PROT">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_CACHE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_CACHE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_QOS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_QOS">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_REGION</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_REGION">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_WSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_WSTRB">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_BRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_RRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.HAS_RRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_OUTSTANDING">2</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING">2</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MAX_BURST_LENGTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.MAX_BURST_LENGTH">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN">Main_Card_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.RUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXI.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN">Main_Card_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S00_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_BASE_PARAM">C_S00_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_HIGH_PARAM">C_S00_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesis</spirit:name>
+        <spirit:displayName>VHDL Synthesis</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>GPS_Synchronizer_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Aug 21 06:30:19 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1fcad1f5</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1fcad1f5</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>Main_Card_GPS_Synchronizer_0_1</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Aug 21 06:30:19 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1fcad1f5</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlbehavioralsimulation</spirit:name>
+        <spirit:displayName>VHDL Simulation</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>GPS_Synchronizer_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Aug 21 06:30:19 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:e81dc7d8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>Main_Card_GPS_Synchronizer_0_1</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Aug 21 06:30:19 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:e81dc7d8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Sat Aug 21 06:32:39 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1fcad1f5</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>GPS_TP</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SYNC_M</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SYNC_C</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SCK</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>MOSI</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>MISO</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">9</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">9</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">10</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/e3b2/hdl/GPS_Synchronizer_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/e3b2/hdl/GPS_Synchronizer_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/Main_Card_GPS_Synchronizer_0_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/e3b2/hdl/GPS_Synchronizer_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/e3b2/hdl/GPS_Synchronizer_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/Main_Card_GPS_Synchronizer_0_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>Main_Card_GPS_Synchronizer_0_1.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Main_Card_GPS_Synchronizer_0_1_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Main_Card_GPS_Synchronizer_0_1_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Main_Card_GPS_Synchronizer_0_1_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Main_Card_GPS_Synchronizer_0_1_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>My new AXI IP</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">10</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Main_Card_GPS_Synchronizer_0_1</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>GPS_Synchronizer_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>47</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a9cdbe9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@254e30f7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@144cad73_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44b5dfe0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27fc3882_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71da149c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc285a3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32cee89f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f7810b6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d642ff6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77d1bf12_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11170a00_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@358634a4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@401f17cd_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22e697a4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a753b8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee86c39_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@651fac60_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65cc2069_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f5d705_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4675821d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c63c0c1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a212ce8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1158a0cc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@421d513_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67dfaad5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11b89643_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44a8d61e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5772b81a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31fd585f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a1fda5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28d98281_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ccf5559_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f3b9e0c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13e7db59_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@779a621e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c2eda66_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@953b8ff_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72807483_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7951885b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d5e507b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bb03259_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fc619bf_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e1d6bca_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39402cfb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@738a9fd5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f2d1c51_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f6cde93_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a092ced_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12e2563c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7243a67f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@364bc74b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28bf15b9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51a76a19_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cd1a7cd_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fc4ea3e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c3d73a8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a762f98_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a7f18e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36ed4b41_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d4d3aa_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f650a12_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e944a84_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8cf8ca4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cac145e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58f45779_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67cc797b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59477347_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e9d9fae_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71ef9a9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d72ece_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61031d62_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61f4a52d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@318696c0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@470e4c78_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53dc7b73_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c7937a2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44cea8fb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79b84344_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28e6df07_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b501112_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7041ce6f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b774a4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16597b4f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66611949_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ce7fbf_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12e2569b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13458d46_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35c9943d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@616b9d8d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a0e758c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76660b64_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13253e47_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69ebe846_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39169eed_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b640100_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cb66c1b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fed337_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@449c2a32_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@614ea4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6905304a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32312845_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cc7883f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dcfda95_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cd746d2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77312353_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@218dd882_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ca0e7c3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ea1f36e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12ad7bc0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f5ebe12_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49bc3fe9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eada747_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e18cf9d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@432d2eda_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e739b6f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1633eea2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fe3e112_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@659a17_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@416e58a9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17286d37_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e528056_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ac12dc0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3433844a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c1d6d67_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@493f65ac_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41322ca3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@361ec6f9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a7b317a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@368fca13_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3465e23f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45ae149b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22e5afe1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21348b4a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61356f66_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@478d18a7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20f6841a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d2d2211_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26ef157_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cfe451d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34fd56cd_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@746a1622_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a43076f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77c5c527_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@376b14f3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53250a6d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@341a0195_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7430a029_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@231fe2e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b018a13_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e89f90a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cf700c5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61fa9d36_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fbef130_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@681ee1ca_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35fd0824_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@100c0ec9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c3c4769_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c47a43a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@754a991a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36c28f1e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1adb7e5f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5469170c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@450b563f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d91c23e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52cdf07f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@165cc6fc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@118a9141_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dc820f5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a2fbf51_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c9c756_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6785a988_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b9727e2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f5cd89a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b2bb0e6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7140a27e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57cf0b0d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44ec2c19_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@418d2c63_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8e2dcd1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70c5cb5c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2664e8d4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c889607_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4045d94d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aacbea6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d69ffcf_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14b1cc0f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33adcf7a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ac97040_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370b1f86_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7988c9be_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72dc6147_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@236eff35_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@363a396f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aca6152_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b970fda_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c2d89fb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f57e6f0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79d85ce1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52cd3ad4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47b2da83_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72ade2de_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f29c04f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51cfd95_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@441a427e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f87a3c7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22036751_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fa7c0bb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b9df052_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@491a5cca_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17eb856e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ea1c49d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b4bc47_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@621c3c3b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b9d10ef_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6136e239_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fca2a8c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@212413b6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64635734_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e182b67_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e21905e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bf8719a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13365435_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@486235a4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cddd126_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@557092ca_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36c36f96_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f601ed9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11c03ab1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5756b17f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ea3f1c5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47a7eff1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12b158e6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1642d36f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f2d2c37_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2744cf21_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@655e7cc1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70656eda_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38413db_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34e1176a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5eac5b5a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@286a0844_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f616280_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32d2e34_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69cc6753_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@574adc1e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@218dabd2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3453930c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d8078a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@638ce4b8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67bf34ef_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71df49b8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c0c86e6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41f5ff2c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f54ffc7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43166a9d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a25b6ee_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a979392_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c2f5f36_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cdd42bb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46eb17f3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1014af1f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75630f99_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1470679f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5079d215_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b543f99_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3edc3af1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10a008a4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8ae0087_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1987e34c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e0bca00_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dce9144_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@599da3bc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e4aeeb3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3922b924_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2464cf7b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@216500ae_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38089384_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@265a059_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63dd680a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43ad89d7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c2c9239_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe42b7f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@276d6afd_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2711755b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56d35690_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e1f92ec_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b3b03c7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f09ff1a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17c14ea_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65b2b144_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38b89250_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3252eaa2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66657907_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c0ba77b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@582c62c4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b6fa93c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f21e6c3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11f5f2a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c199837_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1715c449_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6028f538_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aa7987f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11bf0168_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c1a43a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f18aefc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@698f78b9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aa7d4eb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50e0bf20_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ce9d92a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ef58458_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@354e398b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@485d07e5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fa286ea_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a14be97_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68b27abd_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a862814_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dbec8d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@420783e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@383b9fc1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f75ac71_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71bc06ea_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee3ea93_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41c5bff1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f8f9b0d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e3adc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4523094e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58ac035_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b747c5e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e59b230_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6031c4eb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58bb2183_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@656f0ab4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c361cc4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f6daec7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@458df0c9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fdde292_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ec78d17_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3178087a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69086ed2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@451f478_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12928618_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5560c3cf_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1284b41d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c32e35a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3819d389_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f28c6f6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b7d3c48_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15b3d07_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20e16ede_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c478643_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40557c1_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70f63129_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@612299a7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a0c38a5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3379d322_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@173fad3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46120c9d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@647d9a24_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10b4b7ed_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a8a9d31_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3df867e8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3831a612_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64b9957f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8b34723_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@496f3eca_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18a053bf_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c5db8b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30a12441_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ba04600_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@583dd595_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3475e94a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46d4a2bd_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@609049a9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ea21f53_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14c44dcb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4069f5c0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c6a37ad_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee2abbc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43822720_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28cc2d81_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3477bd19_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d52579e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3329d46c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7282ad9c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ff02d6a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ad78bca_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4eda54bc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b1b4153_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4054fc3e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35fb8bde_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4889258f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b3e2a58_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d5f9680_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@323a2054_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35128719_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17198e74_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12aa7ec8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a352c72_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d994969_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@136e3f91_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23bb7eb9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a40fed3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e536e4f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5075c808_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37bde21f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d7a05c8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2089b6ab_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e2b1f9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66143d24_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e25e386_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ac7d0b0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19158241_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19be7652_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bbd2fc5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b6a2194_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c5de7e5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e834453_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@255ef8f0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28fc7956_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@730c629f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c20eed8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3656868_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37f19d3d_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17018d08_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32f33294_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@365cdbe2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20d0e9f2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bad85a7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ab83866_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49634b6c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31077835_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43a7e1f2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@307755d8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f51c456_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@96bdbec_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d890e0e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c648267_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c69c64f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@465d36ac_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f64574c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@223305bb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4773cbff_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12fe545a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@755f1773_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a5d61e8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60ad8637_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bd084cc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@799f5e3c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6436aaee_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cdf8fa0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16ff2d0a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b69806_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10da74cc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f31ffad_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66f39cdf_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@484baa97_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7904ea7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63c0c949_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ea691ac_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de5ba84_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@122c35cc_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ac0cd29_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6073ea4b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bdb6469_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69b619f6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1536b63a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69f9f260_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5edf6954_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72bd02ab_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b3cf2e0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5faae205_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3be276ff_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7548657_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ba6d1f4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@618e0ab7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3294a946_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4014464c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c498fa_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b466c52_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589ab0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6215a8b3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@471b39df_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48e686a9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24087f0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2adf4887_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2357d939_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ea9f785_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c19aae9_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ed6792c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76e771a3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@609b5590_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f1d8cfe_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68f3a4f5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2002be58_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39e2881f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b751f8b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@405f5d33_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cbe2e06_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a13fb27_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68f11a40_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@403729ab_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d0858a3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c7aab78_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ecd8_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bf6a1ba_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9478814_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f5fae21_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29e588cf_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50e4854_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66a046ba_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21a13502_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c9d234a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@594a3ed_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69c0f997_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2439841c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@488b7664_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2215fb78_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b772296_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5946a1fb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1645e9a2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40fdcf78_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ec53c1a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5519523f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@515f4d0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29159144_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de79ca2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9da90cb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a1fecf3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17c8961c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28724632_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a0e6a6c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a13132_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74567455_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@baa936e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e678e4_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@286986dd_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14b37b32_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7561a8db_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ca0c13a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79f8cba3_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b858e55_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5954dace_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aec0361_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1630f3e6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e9ddafd_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3257902_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4743fd88_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3424249c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58d6afd5_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@457f4d2c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68314c95_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@722ae8b_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46157ca6_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5821c904_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@775989c7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74ffe6ee_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e05648e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22befd4f_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54d9131_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40b1ac90_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6609cbae_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7837b55e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f637502_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e8e8e05_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cac3c1e_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1741a5e2_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d07a9fb_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b388ab7_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17c1b947_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b39c642_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75b2976a_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22082b69_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c6e696c_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7afa1da0_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3743e5be_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b10eaf_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37b8c959_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eb663ab_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a93121_ARCHIVE_LOCATION">d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.DATA_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_CACHE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_LOCK" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_PROT" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_QOS" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_RRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_WSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.MAX_BURST_LENGTH" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="e1496026"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="365c25c9"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="2f529cd7"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="0ca20ac0"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="1d86f0d8"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

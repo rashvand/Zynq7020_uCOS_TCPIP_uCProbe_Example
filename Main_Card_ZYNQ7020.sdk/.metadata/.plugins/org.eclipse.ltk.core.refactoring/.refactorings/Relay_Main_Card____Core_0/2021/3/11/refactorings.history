@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Relay_Main_Card_v3/src/Menu_MemoryMap&apos; to &apos;Menu_MemoryMap.c&apos;" description="Rename resource &apos;Menu_MemoryMap&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Menu_MemoryMap" name="Menu_MemoryMap.c" stamp="1615274174827" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Relay_Main_Card_v3/src/Menu_MemoryMap.c&apos; to &apos;Menu_MemoryMap.h&apos;" description="Rename resource &apos;Menu_MemoryMap.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Menu_MemoryMap.c" name="Menu_MemoryMap.h" stamp="1615278563324" updateReferences="true"/>
+</session>

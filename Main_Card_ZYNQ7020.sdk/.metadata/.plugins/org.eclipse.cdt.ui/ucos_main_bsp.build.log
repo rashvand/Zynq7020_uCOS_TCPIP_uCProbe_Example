@@ -1,0 +1,6 @@
+20:03:43 **** Build of project ucos_main_bsp ****
+make -k all 
+make: *** No rule to make target 'all'.
+
+20:03:44 Build Finished (took 156ms)
+

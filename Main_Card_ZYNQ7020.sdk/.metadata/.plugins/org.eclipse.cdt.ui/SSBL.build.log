@@ -1,0 +1,41 @@
+18:41:58 **** Build of configuration Debug for project SSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/SSBL.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SSBL.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SSBL.d" -MT"src/SSBL.o" -o "src/SSBL.o" "../src/SSBL.c"
+'Finished building: ../src/SSBL.c'
+' '
+'Building file: ../src/Zynq7020.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zynq7020.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/Zynq7020.d" -MT"src/Zynq7020.o" -o "src/Zynq7020.o" "../src/Zynq7020.c"
+../src/Zynq7020.c: In function 'tcp_get_state':
+../src/Zynq7020.c:115:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+../src/Zynq7020.c: In function 'WWDT_Start':
+../src/Zynq7020.c:360:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+'Finished building: ../src/Zynq7020.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: SSBL.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SSBL_bsp/ps7_cortexa9_0/lib -o "SSBL.elf"  ./src/SSBL.o ./src/Zynq7020.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: SSBL.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SSBL.elf  |tee "SSBL.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 155356	   2904	26270048	26428308	1934394	SSBL.elf
+'Finished building: SSBL.elf.size'
+' '
+
+18:42:01 Build Finished (took 3s.616ms)
+

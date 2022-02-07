@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep 27 11:03:50 2021
+# Process ID: 32
+# Current directory: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20888 D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.xpr
+# Log file: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/vivado.log
+# Journal file: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PL_Timer_Interrupt:1.0'. The one found in IP location 'd:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/ip_repo/PL_Timer_Interrupt_1.0' will take precedence over the same IP in location d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/PL_Timer_Interrupt_1.0
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 884.660 ; gain = 260.754
+update_compile_order -fileset sources_1
+open_bd_design {D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/Main_Card.bd}
+Adding component instance block -- xilinx.com:user:RTC_Synchronizer:1.0 - RTC_Synchronizer_0
+Adding component instance block -- xilinx.com:ip:canfd:2.0 - canfd_0
+Adding component instance block -- xilinx.com:ip:canfd:2.0 - canfd_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:user:GPS_Synchronizer:1.0 - GPS_Synchronizer_0
+Successfully read diagram <Main_Card> from BD file <D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/Main_Card.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.664 ; gain = 41.926
+launch_sdk -workspace D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk -hwspec D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/Main_Card_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk -hwspec D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/Main_Card_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name GPS_Synchronizer_v1_0_project -directory D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.tmp/GPS_Synchronizer_v1_0_project d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/GPS_Synchronizer_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/vebko/relay/relay_v3.0/rev.02/main_card_zynq7020/main/main_card_zynq7020/main_card_zynq7020.tmp/gps_synchronizer_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PL_Timer_Interrupt:1.0'. The one found in IP location 'd:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/ip_repo/PL_Timer_Interrupt_1.0' will take precedence over the same IP in location d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/PL_Timer_Interrupt_1.0
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1391.664 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 28 13:14:19 2021...

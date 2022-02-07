@@ -1,0 +1,15 @@
+20:01:39 **** Build of configuration Debug for project ucos_main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/app.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/app.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ucos_main_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/app.d" -MT"src/app.o" -o "src/app.o" "../src/app.c"
+../src/app.c:75:11: fatal error: Source/os.h: No such file or directory
+ #include  <Source/os.h>
+           ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/app.o] Error 1
+
+20:01:40 Build Finished (took 665ms)
+

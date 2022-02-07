@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER GPS_Synchronizer
+	OPTION supported_peripherals = (GPS_Synchronizer);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = GPS_Synchronizer;
+END DRIVER

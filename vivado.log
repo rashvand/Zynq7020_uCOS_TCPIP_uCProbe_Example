@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Feb  7 10:09:24 2022
+# Process ID: 6016
+# Current directory: D:/Git/rashvand/Micrium/Zynq7/Example
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19300 D:\Git\rashvand\Micrium\Zynq7\Example\Main_Card_ZYNQ7020.xpr
+# Log file: D:/Git/rashvand/Micrium/Zynq7/Example/vivado.log
+# Journal file: D:/Git/rashvand/Micrium/Zynq7/Example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  7 10:09:51 2022...

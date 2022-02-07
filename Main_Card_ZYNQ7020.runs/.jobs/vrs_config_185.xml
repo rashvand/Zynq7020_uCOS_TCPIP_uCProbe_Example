@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Main_Card_processing_system7_0_0_synth_1" LaunchDir="D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

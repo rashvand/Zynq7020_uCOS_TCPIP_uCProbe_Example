@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="560" key="DIALOG_X_ORIGIN"/>
+		<item value="224" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="250" key="dialogHeight"/>
+		<item value="350" key="dialogWidth"/>
+		<list key="textEntries">
+			<item value="1"/>
+			<item value="2"/>
+			<item value="2"/>
+			<item value="1"/>
+			<item value="2"/>
+		</list>
+		<list key="orderedElements">
+			<item value="com.xilinx.sdk.targetmanager.ui.xsdb.XSDBConsoleView"/>
+			<item value="org.eclipse.ui.navigator.ProjectExplorer"/>
+			<item value="org.eclipse.ui.views.BookmarkView"/>
+			<item value="org.eclipse.debug.ui.ExpressionView"/>
+			<item value="org.eclipse.debug.ui.BreakpointView"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+		</list>
+		<list key="textArray">
+			<item value="xsc"/>
+			<item value="exp"/>
+			<item value="proje"/>
+			<item value="boo"/>
+			<item value="book"/>
+			<item value="expre"/>
+			<item value="break"/>
+			<item value="brea"/>
+		</list>
+	</section>
+	<section name="PreferencesImportWizard">
+		<item value="D:\Pref.epf" key=""/>
+		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="D:\Pref.epf"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.export.Preferences" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="PreferencesExportWizard">
+		<item value="C:\Users\Saeed\Desktop\ddddd.epf" key=""/>
+		<item value="false" key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>
+		<item value="true" key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID"/>
+		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Saeed\Desktop\ddddd.epf"/>
+		</list>
+	</section>
+</section>

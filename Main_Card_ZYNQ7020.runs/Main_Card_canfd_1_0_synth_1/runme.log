@@ -1,0 +1,19 @@
+
+*** Running vivado
+    with args -log Main_Card_canfd_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main_Card_canfd_1_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Main_Card_canfd_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PL_Timer_Interrupt:1.0'. The one found in IP location 'd:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/ip_repo/PL_Timer_Interrupt_1.0' will take precedence over the same IP in location d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/PL_Timer_Interrupt_1.0
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Main_Card_canfd_1_0, cache-ID = d4d61bdf649170e4.
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 29 20:20:57 2021...

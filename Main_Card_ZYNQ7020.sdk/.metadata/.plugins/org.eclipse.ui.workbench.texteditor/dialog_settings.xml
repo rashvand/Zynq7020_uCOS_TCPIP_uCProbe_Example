@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Print_Calib_Date_Time" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="Print_Calib_Date_Time"/>
+			<item value="calibration date/time"/>
+			<item value="calibration data/time"/>
+			<item value="SB____Main____TIME_CYCLE_CALCULATION"/>
+			<item value="&quot;%sCycle_Start"/>
+			<item value="Cycle_Start"/>
+			<item value="&quot;Cycle_Start"/>
+			<item value="Cycle_Start      "/>
+		</list>
+		<list key="replacehistory">
+			<item value="App_TCP_ServerIPv4_Task"/>
+			<item value="SB____Main____WRITE_CARDS_CONFIG"/>
+			<item value="SB____Main____SET_CARDS_CONFIG"/>
+			<item value="CANFD1"/>
+			<item value="%010lu\t"/>
+			<item value="IBUS"/>
+			<item value="EBUS"/>
+			<item value="READ_CFV_OK"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="627" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
+		<item value="898" key="DIALOG_X_ORIGIN"/>
+		<item value="197" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

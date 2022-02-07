@@ -1,0 +1,447 @@
+#include "xil_exception.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_types.h"
+#include "xil_cache.h"
+#include "XScuGic.h"
+#include "xcanfd_hw.h"
+#include "xcanfd.h"
+#include "sleep.h"
+#include "My_Main_Define.h"
+#include "xil_cache_l.h"
+#include "xil_mmu.h"
+#include "xtime_l.h"
+#include "Relay_Cards.h"
+#include "Relay_Removable_Cards.h"
+
+#define Value_u64_Generate(high, low) (u64)((((u64) high) << 32U) | (u64) low)
+uint32_t CPU_Usage_uSec[10] = {0U}; // [0]--> Current Time, [1]--> min, [2]--> max
+
+#define Max_Num_Of_BIs		1000
+uint32_t BI_Deglitch_Time[Max_Num_Of_BIs];
+uint32_t BI_Debounce_Time[Max_Num_Of_BIs];
+
+uint32_t Timing_Upper[2] = {0U,0U};
+uint32_t Timing_Lower[2] = {0U,0U};
+uint32_t Time_Final[10] = {0U};
+void Calibration____Stage_1____Determine_Two_Pos_And_Neg_Peak_Value(void);
+extern XST_StatusTypeDef DS3231_GetTime(RTC_DateTimeTypeDef *rtc);
+extern XST_StatusTypeDef DS3231_SetTime(RTC_DateTimeTypeDef *rtc);
+extern void read_from_MMC(uint8_t *Pdata, uint32_t blockNum, uint32_t numOfBlock);
+extern void Write_to_MMC(uint8_t *Pdata, uint32_t blockNum, uint32_t numOfBlock);
+void RS232_Send_Data(uint8_t *inputArr, uint32_t len);
+void RS485_Send_Data(uint8_t *inputArr, uint32_t len);
+void HW__Init(void);
+void Init__Set_Network(void);
+//GetVFCHardwareInfo/TempMHAMatrixForDebuging/TempVMAArrayForDebuging
+//VFC_Is_Bypassed 3765
+//GLB_Counter_Samples_Total_New
+//memset(eMMC____WRITE_BUFF, 0, sizeof(eMMC____WRITE_BUFF));
+#if(1) // Variables
+int32_t TEMPPPPP4 = 0;
+
+
+GeneralVariableOnEMMC VariableShouldbeSavedOnEMMC		;
+//_______S:FP Variable___________
+bool		NeedToWriteMenuOnEmmc			= 	false	;
+uint8_t 	MenuInfoPage_Array 	[24000]		=	{0}		;
+uint8_t 	TempArray 			[1000]		=	{0}		;
+bool 		OngoingFPPageLoader				= 	false	;
+bool 		MenuUpdater_OnFrontPanelEvent	= 	false	;
+bool 		TempBypassFPUpdater				= 	false	;
+uint32_t 	TempBypassFPUpdaterCounter		= 	0U		;
+uint32_t 	RoutinResetBypassFPFlag			= 	5000U	;
+uint32_t	RoutinLEDStatusReferesh			= 	300U	;
+uint32_t	RoutinLEDStatusRefereshCounter	= 	0U		;
+uint32_t    RoutinMeasurementRefresh		=   (2000)  ;
+uint32_t    RoutinMeasurementRefreshCounter	=   0U		;
+uint32_t    RoutinBIBOValueRefresh			=   (4000)  ;
+uint32_t    RoutinBIBOValueRefreshCounter	=   0U		;
+uint32_t    RoutinHomePageRefresh			=   (1000000);
+uint32_t    RoutinHomePageRefreshCounter	=   0U		;
+
+uint32_t 	MaximumAnalogInPage 			= 	6U		;
+uint32_t	HorizontalScrollIndex			=   0U		;
+uint32_t	VerticalScrollIndex				=   0U		;
+
+uint32_t    HomePageAddress					= 	0U		;
+
+extern  	LEDInf CurrentLEDInf						;
+extern 		bool LEDStatusShouldbeRefreshed				;
+//_______E:FP Variable___________
+
+extern uint32_t  xemacpsif_addr;
+extern void XEmacPs_IntrHandler(void *XEmacPsPtr);
+extern void timer_callback(void);
+extern uint32_t CANFD_BUS____Error_List[2];
+
+//-----------S: CAN Network Parameter -----------
+#define CARD_TYPE____MASK 											0xFF
+#define CARD_SERIAL____MASK											0x1FFFFF
+
+#define CARD_TYPE 													(uint8_t)0xA2  		// 2 ~ 255
+#define CARD_SERIAL													(uint32_t)0x100002 	// 3 ~ 2097150
+
+#define CARD____MID 					 							(uint32_t)(((0x01 & CARD_TYPE____MASK)<<21U) | (0x000001 & CARD_SERIAL____MASK)) 			// Master ID
+#define CARD____GID 					 							(uint32_t)(((0x01 & CARD_TYPE____MASK)<<21U) | (0x000002 & CARD_SERIAL____MASK)) 			// Global ID, All CARDs can Answer this
+#define CARD____EID 					 							(uint32_t)(((CARD_TYPE & CARD_TYPE____MASK)<<21U) | (CARD_SERIAL & CARD_SERIAL____MASK))	// Extend ID
+//-----------E: CAN Network Parameter -----------
+
+
+//-----------S: CAN Network Commands -----------
+#define CANFD_ANS____READ									(uint8_t)0x01U
+#define CANFD_ANS____WRITE									(uint8_t)0x02U
+#define CANFD_ANS____VERIFY									(uint8_t)0x03U
+
+#define CANFD_CMD____ID_QUERY 								(uint8_t)0x04U
+#define CANFD_CMD____SYS_RST								(uint8_t)0x08U
+#define CANFD_CMD____SET_CYCLE								(uint8_t)0x0CU
+#define CANFD_CMD____VERSION								(uint8_t)0x10U
+#define CANFD_CMD____SET_MODE								(uint8_t)0x14U
+#define CANFD_CMD____FILE_TRANSFER____START					(uint8_t)0x18U
+#define CANFD_CMD____FILE_TRANSFER____DATA					(uint8_t)0x1CU
+#define CANFD_CMD____FILE_TRANSFER____STOP					(uint8_t)0x20U
+#define CANFD_CMD____FILE_TRANSFER____VERIFY				(uint8_t)0x24U
+#define CANFD_CMD____ERROR									(uint8_t)0x28U
+#define CANFD_CMD____SUCCESS								(uint8_t)0x2CU
+#define CANFD_CMD____FAIL									(uint8_t)0x30U
+#define CANFD_CMD____ACK_BYTE								(uint8_t)0x34U
+#define CANFD_CMD____NACK_BYTE								(uint8_t)0x38U
+#define CANFD_CMD____BUSY_BYTE								(uint8_t)0x3CU
+#define CANFD_CMD____SYNC_BYTE								(uint8_t)0x40U
+#define CANFD_CMD____FW_FLASH_ERASE							(uint8_t)0x44U
+#define CANFD_CMD____FW_FLASH_WRITE							(uint8_t)0x48U
+#define CANFD_CMD____FW_FLASH_WRITE_INFO					(uint8_t)0x4CU
+#define CANFD_CMD____FW_FLASH_READ							(uint8_t)0x50U
+#define CANFD_CMD____FW_FLASH_EXECUTE						(uint8_t)0x54U
+#define CANFD_CMD____DATA_FLASH_ERASE						(uint8_t)0x58U
+#define CANFD_CMD____DATA_FLASH_WRITE						(uint8_t)0x5CU
+#define CANFD_CMD____DATA_FLASH_WRITE_INFO					(uint8_t)0x60U
+#define CANFD_CMD____DATA_FLASH_READ						(uint8_t)0x64U
+#define CANFD_CMD____DATA_FLASH_LOAD						(uint8_t)0x68U
+#define CANFD_CMD____SPI_BUS_ACTIVITY						(uint8_t)0x6CU
+#define CANFD_CMD____FP_DISPLIST_CLEAR						(uint8_t)0x70U
+#define CANFD_CMD____FP_DISPLIST_DATA						(uint8_t)0x74U
+#define CANFD_CMD____FP_DISPLIST_DATA_INFO					(uint8_t)0x78U
+#define CANFD_CMD____FP_DISPLIST_READ						(uint8_t)0x7CU
+#define CANFD_CMD____FP_DISPLIST_LOAD						(uint8_t)0x80U
+#define CANFD_CMD____FP_SYNCHRONIZE_DATA					(uint8_t)0x84U
+#define CANFD_CMD____FP_SYNCHRONIZE_CLEAR					(uint8_t)0x88U
+#define CANFD_CMD____FP_SYNCHRONIZE_LOAD					(uint8_t)0x8CU
+#define CANFD_CMD____FP_SYNCHRONIZE_SIDEBAR_DATA			(uint8_t)0x90U
+#define CANFD_CMD____FP_SYNCHRONIZE_SIDEBAR_CLEAR			(uint8_t)0x94U
+#define CANFD_CMD____FP_SYNCHRONIZE_SIDEBAR_LOAD			(uint8_t)0x98U
+#define CANFD_CMD____UI_SYNC								(uint8_t)0x9CU
+#define CANFD_CMD____CARD_CONFIG_DATA						(uint8_t)0xA0U
+#define CANFD_CMD____CARD_CONFIG_LOAD						(uint8_t)0xA4U
+//-----------E: CAN Network Commands -----------
+
+//-----------S: FW Config -----------
+#define FW____VERSION 												(uint32_t)0xA123B987
+//-----------E: FW Config -----------
+
+#define DFLASH____CARD____RESERVED____PAGE						(uint32_t)0U
+#define DFLASH____CARD____ID_SERIAL____PAGE						(uint32_t)1U
+#define DFLASH____CARD____FW_VERSION_____PAGE					(uint32_t)2U
+#define DFLASH____CARD____CALIBRATION_____PAGE					(uint32_t)3U
+#define DFLASH____CARD____1Cycle_RHA_DATA_____PAGE				(uint32_t)4U
+
+#define Calibration_DateTime__Index_In_CalibDataArray			(uint32_t)4000U
+
+
+uint32_t *GPS_SYNCHRONIZER____AXI_BUS = (uint32_t *)XPAR_GPS_SYNCHRONIZER_0_S00_AXI_BASEADDR;
+
+uint32_t *RTC_SYNCHRONIZER____AXI_BUS = (uint32_t *)XPAR_RTC_SYNCHRONIZER_0_S00_AXI_BASEADDR;
+
+uint32_t GPS_SYNCHRONIZER____AXI_BUS____DATA_READ[GPS_AXI_BUS_CAPACITY] = {0U};
+uint32_t GPS_SYNCHRONIZER____AXI_BUS____DATA_WRITE[GPS_AXI_BUS_CAPACITY] = {0U};
+
+uint32_t RTC_SYNCHRONIZER____AXI_BUS____DATA_READ[RTC_AXI_BUS_CAPACITY] = {0U};
+uint32_t RTC_SYNCHRONIZER____AXI_BUS____DATA_WRITE[RTC_AXI_BUS_CAPACITY] = {0U};
+
+
+//uint16_t *Hw2CPU____Array_Address[AXI_BUS_SPI_DATA_COUNT], *CPU2Hw____Array_Address[AXI_BUS_SPI_DATA_COUNT];
+//uint32_t Hw2CPU____Data_Byte_counter = 0U, CPU2Hw____Data_Byte_counter = 0U;
+
+#define CANFD____TRANSFER_PACKET____SIZE							(uint8_t)32U
+
+
+
+typedef enum {
+	FW_FLASH_MEM = 0x00, DATA_FLASH_MEM = 0x01
+} FLASH_MEM_TypeDef;
+
+typedef struct {
+	uint32_t ExtID;
+	uint32_t IDE;
+	uint32_t RTR;
+	uint32_t DLC;
+	uint8_t Data[8];
+} CANFD_Packet_Struct;
+
+typedef enum {
+	BOOT_MODE____UNKOWN 		= (uint8_t)0x00,
+	BOOT_MODE____BOOTLOADER 	= (uint8_t)0x01,
+	BOOT_MODE____MAIN 			= (uint8_t)0x02
+} Boot_Mode_TypeDef;
+
+typedef struct {
+	uint32_t NID;
+
+	uint8_t Type;
+	uint32_t Serial;
+	Boot_Mode_TypeDef Boot_Mode;
+
+	uint16_t MEMORY_SIZE;
+
+	uint16_t Write_Data[25];
+	uint16_t Read_Data[25];
+
+	uint16_t Cycle_Need;
+	uint16_t Write_Cycle;
+	uint16_t Read_Cycle;
+	uint16_t Max_Cycle;
+
+	uint16_t Cycle_Start;
+
+	uint32_t FW_Version;
+	uint32_t Bootloader_Version;
+
+	bool FW_Exist;
+
+	uint16_t FLASH_ID;
+
+	uint8_t CFW_Information[4096];
+	uint8_t Calibration_Data[4096];
+	uint8_t Card_Config[4096];
+
+	XST_StatusTypeDef CFW_Information_Status;
+	XST_StatusTypeDef Calibration_Data_Read_Status;
+	XST_StatusTypeDef Card_Config_Status;
+
+	XST_StatusTypeDef Factory_Data_Write_Status;
+	XST_StatusTypeDef Calibration_Data_Write_Status;
+
+	XST_StatusTypeDef FW_Flash_Status;
+
+	XST_StatusTypeDef SPI_BUS_Trancieve_Status;
+
+	XST_StatusTypeDef Set_Cycle_Status;
+
+} CARD_DATA_STRUCT;
+
+typedef struct {
+	uint32_t NID;
+
+	uint8_t Type;
+	uint32_t Serial;
+	Boot_Mode_TypeDef Boot_Mode;
+
+	uint16_t MEMORY_SIZE;
+
+	uint32_t FW_Version;
+	uint32_t Bootloader_Version;
+
+	bool FW_Exist;
+
+	uint16_t FLASH_ID;
+
+	uint8_t CFW_Information[4096];
+
+	XST_StatusTypeDef CFW_Information_Status;
+	XST_StatusTypeDef Calibration_Data_Read_Status;
+
+	XST_StatusTypeDef Factory_Data_Write_Status;
+
+	XST_StatusTypeDef FW_Flash_Status;
+
+} DEVICE_DATA_STRUCT;
+
+extern uint32_t CANFD_NET____LOOKUP_ID____COUNT;
+
+#define W25Q80 												0xEF13
+#define W25Q16 												0xEF14
+#define W25Q32 												0xEF15
+#define W25Q64 												0xEF16
+
+uint32_t CANFD_NET____LOOKUP_ID____COUNT = 0U, CANFD_NET____Removable____LOOKUP_ID____COUNT = 0U;
+CARD_DATA_STRUCT Device_DB[CARD_Specifications____Max_Slot_Card_Capacity] = { 0 };
+DEVICE_DATA_STRUCT Removable_Device_DB[RemovableNode_Specifications____Max_Node_Capacity] = { 0 };
+
+uint32_t Removable_Node_BUS_Scan____Counter = 0U, Removable_Node_BUS_Scan____Change_Timeout = 0U;
+
+uint8_t Data_Packet____4KB[4096] = { 0U }, FW_Data____4KB____Temp[4096] = { 0U };
+uint32_t FW_Data____4KB____Counter = 0U;
+
+uint8_t Removable_Data_Packet____4KB[4096] = { 0U }, Removable_FW_Data____4KB____Temp[4096] = { 0U };
+uint32_t Removable_FW_Data____4KB____Counter = 0U;
+
+
+struct c {
+	uint32_t NID;
+	uint32_t ANS;
+} Answer_Pack;
+
+struct c1 {
+	uint32_t NID;
+	uint32_t ANS;
+	uint8_t Data[64];
+} Removable_Answer_Pack;
+
+
+struct f {
+	uint8_t ID;
+	uint32_t Size;
+	uint32_t Counter;
+} FWDescriptor;
+
+struct f1 {
+	uint8_t ID;
+	uint32_t Size;
+	uint32_t Counter;
+} Removable_FWDescriptor;
+
+
+
+extern XCanFd canfd0_i;
+extern XCanFd canfd1_i;
+
+uint64_t uwTick_500us = 0U;
+
+uint64_t System_Reset____Timeout_ms = 0U;
+
+
+
+
+#define CARD_TYPE____MASK 										0xFF
+#define CARD_SERIAL____MASK										0x1FFFFF
+
+#define CARD_TYPE1 												0xD2  		// 2 ~ 255
+#define CARD_SERIAL1											0x100002 	// 3 ~ 2097150
+
+
+uint32_t FP_ID = (uint32_t)(((CARD_TYPE1 & CARD_TYPE____MASK)<<21U) | (CARD_SERIAL1 & CARD_SERIAL____MASK));
+
+
+
+
+
+typedef enum  {
+	KEY_NONE							= (uint32_t)0U,
+	KEY_ESC____BITORDER					= (uint32_t)0x00000001,
+	KEY_MENU____BITORDER				= (uint32_t)0x00000002,
+	KEY_ENTER____BITORDER				= (uint32_t)0x00000004,
+	KEY_UP____BITORDER					= (uint32_t)0x00000008,
+	KEY_DOWN____BITORDER				= (uint32_t)0x00000010,
+	KEY_LEFT____BITORDER				= (uint32_t)0x00000020,
+	KEY_RIGHT____BITORDER				= (uint32_t)0x00000040,
+	KEY_DISP_FN1____BITORDER			= (uint32_t)0x00000080,
+	KEY_DISP_FN2____BITORDER			= (uint32_t)0x00000100,
+	KEY_DISP_FN3____BITORDER			= (uint32_t)0x00000200,
+	KEY_DISP_FN4____BITORDER			= (uint32_t)0x00000400
+}KEYPAD_BTN;
+
+typedef enum  {
+	FrontPanetUpdateEventType_KEYPressed			= (uint32_t)0U,
+	FrontPanetUpdateEventType_MeasurementUpdate		= (uint32_t)1U,
+	FrontPanetUpdateEventType_LEDUpdate				= (uint32_t)2U,
+	FrontPanetUpdateEventType_InitializeMode		= (uint32_t)3U,
+	FrontPanetUpdateEventType_WaitingMode			= (uint32_t)4U,
+	FrontPanetUpdateEventType_BIBOValue				= (uint32_t)5U,
+	FrontPanetUpdateEventType_HomePage				= (uint32_t)6U,
+
+
+
+}FrontPanetUpdateEventType;
+
+enum UIType{
+	UIType_None   					= (uint32_t)0U ,
+	UIType_Password               	= (uint32_t)1U , // Please dont change the position of this item in the combobox Items. It is used to fill the array of general ui array for keikl
+	UIType_GeneralNotification    	= (uint32_t)2U ,
+	UIType_Measurment             	= (uint32_t)3U ,
+	UIType_ComboBox               	= (uint32_t)4U ,
+	UIType_Range                  	= (uint32_t)5U ,
+	UIType_Menu						= (uint32_t)6U ,
+	UIType_Waiting_type				= (uint32_t)7U ,
+	UIType_Progressbar				= (uint32_t)8U ,
+	UIType_Oscillograph				= (uint32_t)9U ,
+	UIType_NetworkIF				= (uint32_t)10U ,
+	UIType_eMMCIF					= (uint32_t)11U ,
+	UIType_EndPoint					= (uint32_t)12U ,
+};
+
+typedef struct{
+
+	uint8_t		Item_DisplayHeaderName[VFCSignalShortNameSize]							;
+	uint8_t		Item_MenuName[VFCSignalShortNameSize]									;
+	uint8_t 	Item_UIType																; // UI forum type
+	uint8_t 	Item_SelectionType														; // UI forum type
+
+	uint32_t 	Item_StartMemoryAddress													;
+	uint32_t 	Item_CurrentPage														;
+	uint32_t 	Item_PreviousPage														; // Default value is set 0  //68
+	int32_t 	Item_EscapePageAddress													;
+	uint8_t 	Item_Count																;
+
+	uint8_t		Item_ItemNames[MenuSubBranchMaxCount][VFCSignalShortNameSize]			; //address of first page 1569
+	uint32_t 	Item_EnterPageAddress[MenuSubBranchMaxCount]							; //address of first page1809
+	uint8_t 	Item_ShowValueStatus[MenuSubBranchMaxCount]								;
+
+//	uint32_t 	Item_RefreshableStatus[MenuSubBranchMaxCount]							;
+
+	int32_t 	Item_MHAAddress[MenuSubBranchMaxCount]									;
+	int32_t 	Item_MHAValue[MenuSubBranchMaxCount]									;
+	int32_t 	Item_MHAObjectUniqeID[MenuSubBranchMaxCount]							;//address of first page 2589
+	uint8_t 	Item_VisibilityStatus[MenuSubBranchMaxCount]							;
+	uint8_t 	Item_ReadonlyStatus[MenuSubBranchMaxCount]								;//address of first page 2709
+	int32_t 	Icon_ID[MenuSubBranchMaxCount]											;//address of first page 2949
+
+//	int32_t 	Icon_Location[MenuSubBranchMaxCount]									; // 16bit msb:x, 16bit lsb:y
+//	int32_t 	Icon_Dimention[MenuSubBranchMaxCount]									; // 16bit msb:w, 16bit lsb:h
+
+
+	uint8_t 	Current_SelectedIndex													; // This property will be used in The Item List, and the Combobox	UI Type
+	uint8_t 	Previous_SelectedIndex													; // This property will be used in The Item List, and the Combobox	UI Type
+
+	int32_t 	Item_DefaultValue														; // This property will be used in the Range, and the Combobox UI Type
+	int32_t 	Item_Min																; // This property will be used in the Range UI Type
+	int32_t 	Item_Max																; // This property will be used in the Range UI Type
+	int32_t 	Item_Step																; // This property will be used in the Range UI Type
+	int32_t 	Item_AmplitudeDivider													; // This property will be used in the Range UI Type //address of first page 2971
+
+
+	uint8_t 	Item_InfinityStatus														; // This property will be used in the Range UI Type
+	uint8_t		Range_Unit[VFCSignalUnitSize]											; // This property will be used in the Range UI Type
+	uint8_t		Item_MultiplierUnit[VFCSignalUnitMultiplierSize]						; // This property will be used in the Range UI Type
+	uint8_t		Fn_Labels[MenuFnMaxCount][MenuFnLabelMaxLength]							;
+	uint8_t 	Fn_SelectionStatus[MenuFnMaxCount] 										;
+	uint32_t 	Fn_RelatedPageAddress[MenuFnMaxCount]									;//address of first page 3043
+	uint32_t 	Item_TAG[MenuSubBranchMaxCount]											;//address of first page 3283
+
+	uint32_t 	Key_Pressed																;//address of first page3287
+
+
+	uint8_t 	SideLedLable[LEDMaxLayer][LEDMaxCount][VFCSignalShortNameSize]			;
+	uint8_t 	SideLedColor[LEDMaxLayer][LEDMaxCount]									;
+	uint8_t 	SideLedLableVisibility[LEDMaxLayer][LEDMaxCount]						;
+	uint8_t  	SideActiveLayer															;
+	uint8_t		MesurementUnit[MaxRowInMeasurment][VFCSignalUnitSize]					;
+	uint8_t		MesurementMultiplierUnit[MaxRowInMeasurment][VFCSignalUnitMultiplierSize];//address of first page 4542
+	uint8_t		MesurementRowsCount														;
+}Display_List;
+
+Display_List Current_Display_List = {0U}, New_Display_List = {0U};
+uint8_t Refresh_Display_List = 0U;
+
+uint8_t DispList____Compressed_Recieve_Buff[25000] = {0U};
+
+uint8_t FP____UnCompressed_Transmit_Sync_Buffer[3000] = {0U};
+uint8_t FP____Compressed_Transmit_Sync_Buffer[3000] = {0U};
+
+uint8_t FP____UnCompressed_Recieve_Sync_Buffer[3000] = {0U};
+uint8_t FP____Compressed_Recieve_Sync_Buffer[3000] = {0U};
+
+uint8_t FP____UnCompressed_Transmit_Sync_Sidebar_Buffer[3000] = {0U};
+uint8_t FP____Compressed_Transmit_Sync_Sidebar_Buffer[3000] = {0U};
+
+uint8_t FP____UnCompressed_R

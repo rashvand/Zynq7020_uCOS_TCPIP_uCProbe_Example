@@ -1,0 +1,8 @@
+AbstractTextEditor.Color.Background=244,244,244
+AbstractTextEditor.Color.Background.SystemDefault=false
+breakpointIndicationColor=128,0,64
+breakpointInstanceColor=255,0,0
+eclipse.preferences.version=1
+lineNumberColor=0,0,0
+lineNumberRuler=true
+overviewRuler_migration=migrated_3.1

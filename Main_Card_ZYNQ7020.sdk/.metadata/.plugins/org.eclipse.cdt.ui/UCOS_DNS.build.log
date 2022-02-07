@@ -1,0 +1,32 @@
+10:30:23 **** Auto Build of configuration Debug for project ucos_dns ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/app.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/app.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ucos_dns_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/app.d" -MT"src/app.o" -o "src/app.o" "../src/app.c"
+'Finished building: ../src/app.c'
+' '
+'Building target: ucos_dns.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ucos_dns_bsp/ps7_cortexa9_0/lib -o "ucos_dns.elf"  ./src/app.o   -Wl,--start-group,-lucos,-lgcc,-lc,--end-group -Wl,--start-group,-lucos,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/app.o: in function `main':
+D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns\Debug/../src/app.c:97: undefined reference to `UCOSStartup'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/app.o: in function `MainTask':
+D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns\Debug/../src/app.c:124: undefined reference to `UCOS_Print'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns\Debug/../src/app.c:126: undefined reference to `UCOS_Print'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns\Debug/../src/app.c:132: undefined reference to `UCOS_Printf'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns\Debug/../src/app.c:135: undefined reference to `UCOS_Printf'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns\Debug/../src/app.c:148: undefined reference to `UCOS_Printf'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns\Debug/../src/app.c:153: undefined reference to `UCOS_Print'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ../../ucos_dns_bsp/ps7_cortexa9_0/lib\libucos.a(os_cpu_a_vfp-d32.o): in function `OS_CPU_ARM_ExceptHndlr_BreakTask':
+D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns_bsp\ps7_cortexa9_0\libsrc\ucos_osiii_v1_45\src/uCOS-III/Ports/ARM-Cortex-A/ARMv7-A/GNU/os_cpu_a_vfp-d32.S:469: undefined reference to `OS_CPU_ExceptHndlr'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ../../ucos_dns_bsp/ps7_cortexa9_0/lib\libucos.a(os_cpu_a_vfp-d32.o): in function `OS_CPU_ARM_ExceptHndlr_BreakExcept':
+D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns_bsp\ps7_cortexa9_0\libsrc\ucos_osiii_v1_45\src/uCOS-III/Ports/ARM-Cortex-A/ARMv7-A/GNU/os_cpu_a_vfp-d32.S:508: undefined reference to `OS_CPU_ExceptHndlr'
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ../../ucos_dns_bsp/ps7_cortexa9_0/lib\libucos.a(os_cpu_a_vfp-d32.o): in function `OS_CPU_ARM_ExceptHndlr_BreakNothing':
+D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\ucos_dns_bsp\ps7_cortexa9_0\libsrc\ucos_osiii_v1_45\src/uCOS-III/Ports/ARM-Cortex-A/ARMv7-A/GNU/os_cpu_a_vfp-d32.S:548: undefined reference to `OS_CPU_ExceptHndlr'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: ucos_dns.elf] Error 1
+
+10:30:25 Build Finished (took 1s.552ms)
+

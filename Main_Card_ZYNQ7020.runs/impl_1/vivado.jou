@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug 21 11:03:44 2021
+# Process ID: 22300
+# Current directory: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/impl_1
+# Command line: vivado.exe -log Main_Card_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Main_Card_wrapper.tcl -notrace
+# Log file: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/impl_1/Main_Card_wrapper.vdi
+# Journal file: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Main_Card_wrapper.tcl -notrace

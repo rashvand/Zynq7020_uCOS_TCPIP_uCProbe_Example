@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Memory>
+<Block Addr="MenuBuffer_256MB" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+<Rendering ID="org.eclipse.debug.ui.rendering.unsignedint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib + 50000" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib + 50000/4" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="GLB__SDRM_START_BYTE____RMS_Memory" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="GLB__SDRM_START_BYTE____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____RMS_Memory" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____RMS_Memory" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____RMS_Memory" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____RMS_Memory" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____RMS_Memory" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="SDRAM____Magnitude_CTPT_Calib" Context="JTAG-jsn-JTAG-SMT2-210251A08870-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="0x4a50004" Context="JTAG-jsn-JTAG-SMT2-21025DA10381-4ba00477-0.0" Size="80"/>
+<Block Addr="0x760c088" Context="JTAG-jsn-JTAG-SMT2-21025DA10381-4ba00477-0.0" Size="4">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="0x00415e34" Context="JTAG-jsn-JTAG-SMT2-21025DA10381-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+</Memory>

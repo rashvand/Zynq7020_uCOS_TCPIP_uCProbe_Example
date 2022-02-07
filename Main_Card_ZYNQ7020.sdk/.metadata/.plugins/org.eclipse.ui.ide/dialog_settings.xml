@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\Embedded_Hardware\Vebko\Projects\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\Relay_Main_Card____Core_1"/>
+		<item value="D:\Embedded_Hardware\Vebko\Projects\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\Relay_Main_Card____Core_1_bsp"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Vebko\Relay\Relay_V3.0\tmp\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\FSBL"/>
+			<item value="D:\Vebko\Relay\Relay_V3.0\tmp\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\Relay_Main_Card____Core_1"/>
+			<item value="D:\Vebko\Relay\Relay_V3.0\tmp\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\Relay_Main_Card____Core_1_bsp"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

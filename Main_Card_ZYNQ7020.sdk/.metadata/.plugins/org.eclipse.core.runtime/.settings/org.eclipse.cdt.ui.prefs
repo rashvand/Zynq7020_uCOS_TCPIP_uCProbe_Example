@@ -1,0 +1,26 @@
+c_keyword=0,128,255
+c_keyword_bold=false
+c_type=0,0,255
+c_type_bold=false
+content_assist_proposals_timeout=5000
+eclipse.preferences.version=1
+editor_folding_default_headers=false
+editor_folding_preprocessor_enabled=true
+hoverModifierMasks=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;0;org.eclipse.cdt.ui.ProblemHover;0;org.eclipse.cdt.ui.CDocHover;0;org.eclipse.cdt.ui.CMacroExpansionHover;0;org.eclipse.cdt.ui.CSourceHover;131072;org.eclipse.cdt.ui.AnnotationHover;0;
+hoverModifiers=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;\!0;org.eclipse.cdt.ui.ProblemHover;\!0;org.eclipse.cdt.ui.CDocHover;\!0;org.eclipse.cdt.ui.CMacroExpansionHover;\!0;org.eclipse.cdt.ui.CSourceHover;Shift;org.eclipse.cdt.ui.AnnotationHover;\!0;
+markOccurrences=false
+matchingBracketsColor=0,0,0
+org.eclipse.cdt.internal.ui.text.doctools.doxygen.multi=0,111,221
+org.eclipse.cdt.ui.text.templates.custom=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+pp_directive=128,128,64
+pp_directive_bold=false
+scalability.numberOfLines=500000
+scalability.reconciler=false
+semanticHighlighting.externalSDK.color=128,0,64
+semanticHighlighting.functionDeclaration.bold=false
+semanticHighlighting.methodDeclaration.bold=false
+sourceHoverBackgroundColor=255,255,225
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

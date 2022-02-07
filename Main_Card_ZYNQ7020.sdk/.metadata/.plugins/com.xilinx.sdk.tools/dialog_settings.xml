@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="0x00000000" key="Main_Card_wrapper_hw_platform_0-offSet"/>
+	<item value="Main_Card_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="Main_Card_wrapper_hw_platform_0-device"/>
+	<item value="D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Boot\BOOT.mcs" key="Main_Card_wrapper_hw_platform_0-imgFile"/>
+	<item value="false" key="Main_Card_wrapper_hw_platform_0-blankCheck"/>
+	<item value="Local" key="Main_Card_wrapper_hw_platform_0-target"/>
+	<item value="false" key="Main_Card_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="D:\Vebko\Relay\Relay_V3.0\Rev.02\Main_Card_Zynq7020\Main\Main_Card_ZYNQ7020\Main_Card_ZYNQ7020.sdk\FSBL\Debug\FSBL.elf" key="Main_Card_wrapper_hw_platform_0-fsblFile"/>
+	<item value="qspi-x4-single" key="Main_Card_wrapper_hw_platform_0-flashType"/>
+</section>

@@ -1,0 +1,6 @@
+20:26:58 **** Auto Build of project ucos_bsp ****
+make -k all 
+make: *** No rule to make target 'all'.
+
+20:26:58 Build Finished (took 102ms)
+

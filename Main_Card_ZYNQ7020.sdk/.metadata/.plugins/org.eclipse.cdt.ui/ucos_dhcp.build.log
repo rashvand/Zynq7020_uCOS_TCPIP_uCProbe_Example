@@ -1,0 +1,23 @@
+12:24:53 **** Build of configuration Debug for project ucos_dhcp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/app.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/app.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ucos_dhcp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/app.d" -MT"src/app.o" -o "src/app.o" "../src/app.c"
+'Finished building: ../src/app.c'
+' '
+'Building target: ucos_dhcp.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ucos_dhcp_bsp/ps7_cortexa9_0/lib -o "ucos_dhcp.elf"  ./src/app.o   -Wl,--start-group,-lucos,-lgcc,-lc,--end-group -Wl,--start-group,-lucos,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ucos_dhcp.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ucos_dhcp.elf  |tee "ucos_dhcp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 284712	   2380	  58160	 345252	  544a4	ucos_dhcp.elf
+'Finished building: ucos_dhcp.elf.size'
+' '
+
+12:24:56 Build Finished (took 3s.170ms)
+

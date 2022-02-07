@@ -1,0 +1,761 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul 29 20:18:49 2021
+# Process ID: 24924
+# Current directory: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_canfd_0_0_synth_1
+# Command line: vivado.exe -log Main_Card_canfd_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main_Card_canfd_0_0.tcl
+# Log file: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_canfd_0_0_synth_1/Main_Card_canfd_0_0.vds
+# Journal file: D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_canfd_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main_Card_canfd_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PL_Timer_Interrupt:1.0'. The one found in IP location 'd:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/ip_repo/PL_Timer_Interrupt_1.0' will take precedence over the same IP in location d:/Vebko/SoftwareFTP/ZZ-Hardware/80-Vivado/03-IP_repository/PL_Timer_Interrupt_1.0
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.cache/ip 
+Command: synth_design -top Main_Card_canfd_0_0 -part xc7z020clg400-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20624 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 843.684 ; gain = 175.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main_Card_canfd_0_0' [d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/synth/Main_Card_canfd_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8320]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
+WARNING: [Synth 8-6060] Synth Warning: [XPM_MEMORY 30-25] MESSAGE_CONTROL (1) specifies simulation message reporting, but any potential collisions reported for this configuration should be further investigated in netlist timing simulations for improved accuracy.   [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:545]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (4#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (5#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8320]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:958]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (12#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1226]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (20#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (25#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (29#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8320]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
+WARNING: [Synth 8-6060] Synth Warning: [XPM_MEMORY 30-25] MESSAGE_CONTROL (1) specifies simulation message reporting, but any potential collisions reported for this configuration should be further investigated in netlist timing simulations for improved accuracy.   [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:545]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (34#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (34#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8320]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1111]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (35#1) [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'Main_Card_canfd_0_0' (37#1) [d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/synth/Main_Card_canfd_0_0.v:57]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port sleep
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port rsta
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port regcea
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectsbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectdbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port regceb
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[31]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[30]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[29]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[28]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[27]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[26]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[25]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[24]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[23]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[22]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[21]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[20]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[19]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[18]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[17]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[16]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[15]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[14]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[13]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[12]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[11]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[10]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[9]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[8]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[7]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[6]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[5]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[4]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[3]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[2]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[1]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[0]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectsbiterrb
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectdbiterrb
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_tl_arbit has unconnected port CAN_CLK
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_tl_arbit has unconnected port TXE_TX_EN
+WARNING: [Synth 8-3331] design xpm_cdc_single has unconnected port src_clk
+WARNING: [Synth 8-3331] design xpm_cdc_array_single__parameterized0 has unconnected port src_clk
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port S_RST
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port S_CLK
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[11]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[12]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[13]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[14]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[15]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[16]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[17]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[18]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[19]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[20]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[21]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[22]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[23]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[24]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[25]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[26]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[27]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[28]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[29]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[30]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA_F1[31]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[16]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[17]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[18]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[19]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[20]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[21]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[22]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[23]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[24]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[25]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[26]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[27]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[28]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[29]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[30]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_TX_DATA_IN[31]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[11]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[12]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[13]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[14]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[15]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[16]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[17]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[18]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[19]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[20]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[21]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[22]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[23]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[24]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[25]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[26]
+WARNING: [Synth 8-3331] design canfd_v2_0_1_can_timestamp has unconnected port TS_RX_RDATA[27]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1054.852 ; gain = 386.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1054.852 ; gain = 386.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1054.852 ; gain = 386.367
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0.xdc] for cell 'inst'
+Parsing XDC File [D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_canfd_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_canfd_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc] for cell 'inst'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/can_inst/ol/ol_tbmm/txmsg_addr_gen/XPM_CDC_MODULES.LOCKED_ID_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/can_inst/ol/ol_tbmm/txmsg_addr_gen/XPM_CDC_MODULES.LOCKED_ID_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/can_inst/tl/timestamp/XPM_CDC_MODULES.MATCHED_FILTER_INDEX_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/can_inst/tl/timestamp/XPM_CDC_MODULES.MATCHED_FILTER_INDEX_2C_CDC_TO'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_Card_canfd_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_Card_canfd_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/can_inst/ol/olglue/xpm_cdc_async_rst_inst_1'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/can_inst/ol/olglue/xpm_cdc_async_rst_inst_1'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/can_inst/ol/olglue/xpm_cdc_async_rst_inst_2'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'inst/can_inst/ol/olglue/xpm_cdc_async_rst_inst_2'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_Card_canfd_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_Card_canfd_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/bsp/XPM_CDC_MODULES.BUFFER_IS_READY_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/bsp/XPM_CDC_MODULES.BUFFER_IS_READY_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/bsp/XPM_CDC_MODULES.CANCEL_BUFFER_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/bsp/XPM_CDC_MODULES.CANCEL_BUFFER_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/timestamp/XPM_CDC_MODULES.MATCH_RESULT_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/timestamp/XPM_CDC_MODULES.MATCH_RESULT_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlom/XPM_CDC_MODULES.EMU_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlom/XPM_CDC_MODULES.EMU_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.BRSD_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.BRSD_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.DAR_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.DAR_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.DPEE_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.DPEE_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.IFF5_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.IFF5_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.IFF6_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.IFF6_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.IFF_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.IFF_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.LBACK_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.LBACK_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.SBR_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.SBR_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.SLEEP_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.SLEEP_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.SNOOP_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.SNOOP_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.TDC_EN_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.TDC_EN_2C_CDC_TO'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.TSMP_2C_CDC_TO'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'inst/can_inst/tl/tlsync/XPM_CDC_MODULES.TSMP_2C_CDC_TO'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_Card_canfd_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_Card_canfd_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/xpm_cdc_sync_rst_inst_1'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/xpm_cdc_sync_rst_inst_1'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/xpm_cdc_sync_rst_inst_2'
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/xpm_cdc_sync_rst_inst_2'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/gen_fifo_rx0.u_rxxpm_1'
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/gen_fifo_rx0.u_rxxpm_1'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/gen_rx1.u_rxxpm_2'
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/gen_rx1.u_rxxpm_2'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/u_txxpm_1'
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/u_txxpm_1'
+Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/u_txxpm_2'
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+Finished Sourcing Tcl File [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'inst/u_txxpm_2'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_Card_canfd_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_Card_canfd_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1113.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1115.973 ; gain = 2.195
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1115.973 ; gain = 447.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1115.973 ; gain = 447.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_canfd_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property EXTRACT_RESET = false for inst/can_inst/tl/clkdiv/CLKD_COUNTER_I_reg. (constraint file  d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc, line 9).
+Applied set_property EXTRACT_RESET = false for inst/can_inst/tl/clkdiv/CLKD_COUNTER_I_reg. (constraint file  d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc, line 9).
+Applied set_property EXTRACT_RESET = false for inst/can_inst/tl/clkdiv/CLKD_COUNTER_I_reg. (constraint file  d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc, line 9).
+Applied set_property EXTRACT_RESET = false for inst/can_inst/tl/clkdiv/CLKD_COUNTER_I_reg. (constraint file  d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc, line 9).
+Applied set_property EXTRACT_RESET = false for inst/can_inst/tl/clkdiv/CLKD_COUNTER_I_reg. (constraint file  d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc, line 9).
+Applied set_property EXTRACT_RESET = false for inst/can_inst/tl/clkdiv/CLKD_COUNTER_I_reg. (constraint file  d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc, line 9).
+Applied set_property EXTRACT_RESET = false for inst/can_inst/tl/clkdiv/CLKD_COUNTER_I_reg. (constraint file  d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc, line 9).
+Applied set_property EXTRACT_RESET = false for inst/can_inst/tl/clkdiv/CLKD_COUNTER_I_reg. (constraint file  d:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.srcs/sources_1/bd/Main_Card/ip/Main_Card_canfd_0_0/Main_Card_canfd_0_0_clocks.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst/can_inst/ol/ol_tbmm/txmsg_addr_gen/\XPM_CDC_MODULES.LOCKED_ID_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/timestamp/\XPM_CDC_MODULES.MATCHED_FILTER_INDEX_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/ol/olglue/xpm_cdc_async_rst_inst_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/ol/olglue/xpm_cdc_async_rst_inst_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.BRSD_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/bsp/\XPM_CDC_MODULES.BUFFER_IS_READY_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/bsp/\XPM_CDC_MODULES.CANCEL_BUFFER_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.DAR_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.DPEE_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlom/\XPM_CDC_MODULES.EMU_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.IFF5_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.IFF6_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.IFF_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.LBACK_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/timestamp/\XPM_CDC_MODULES.MATCH_RESULT_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.SBR_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.SLEEP_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.SNOOP_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.TDC_EN_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/can_inst/tl/tlsync/\XPM_CDC_MODULES.TSMP_2C_CDC_TO . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_sync_rst_inst_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_sync_rst_inst_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/\gen_fifo_rx0.u_rxxpm_1 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/\gen_rx1.u_rxxpm_2 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/u_txxpm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/u_txxpm_2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1115.973 ; gain = 447.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'canfd_v2_0_1_slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'tbs_cs_reg' in module 'canfd_v2_0_1_can_ol_tbs'
+INFO: [Synth 8-802] inferred FSM for state register 'imm_cs_reg' in module 'canfd_v2_0_1_can_ol_imm'
+INFO: [Synth 8-5546] ROM "IC_AD_REG_TRR_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_REG_TCR_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_REG_FSR_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_REG_WMR_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_REG_EFS_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_REG_EFW_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_IER_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_AFR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_SRR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_MSR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_BRPR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_F_BRPR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_BTR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_TSR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_F_BTR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_REG_IETRS_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_REG_IECRS_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_ESR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IC_AD_ICR_SEL_I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+INFO: [Synth 8-5544] ROM "RXE_DLC_EXT_FD_I" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                             0010 |                               00
+                 SM_READ |                             1000 |                               01
+                SM_WRITE |                             0100 |                               10
+                 SM_RESP |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'canfd_v2_0_1_slave_attachment'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                 LOOPING |                               01 |                               01
+              PROCESSING |                               10 |                               10
+            ROUND_FINISH |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tbs_cs_reg' using encoding 'sequential' in module 'canfd_v2_0_1_can_ol_tbs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                 LOOPING |                               01 |                               01
+              PROCESSING |                               10 |                               10
+            ROUND_FINISH |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'imm_cs_reg' using encoding 'sequential' in module 'canfd_v2_0_1_can_ol_imm'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1115.973 ; gain = 447.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\can_inst/tl /\IC_SYNC_SR_ESTAT_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/tl /\bsp/RXF_FULL_I_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_rbmm/ol_tac/pr2_rd_req_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_rbmm/ol_tac/pr1_rd_req_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_tbmm/tx_event_fifo_cntl/wr_index_id_loc0_inferred /\ol_tbmm/tx_event_fifo_cntl/wr_index_id_loc_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/wr_index_id_loc0_inferred /\ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/wr_index_id_loc_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_rbmm/ol_tac_nf/pr2_rd_req_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_rbmm/ol_tac_nf/pr1_rd_req_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_rbmm/GEN_FIFO_1_CNTL.rxmsg_fifo_cntl_1/wr_index_id_loc0_inferred /\ol_rbmm/GEN_FIFO_1_CNTL.rxmsg_fifo_cntl_1/wr_index_id_loc_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/IC_REG_F_BRPR_I_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/IC_REG_F_BRPR_I_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/can_inst/ol/ol_tbmm/ol_tac_wr/host_req_reg' (FDR) to 'inst/can_inst/ol/ol_tbmm/ol_tac_wr/host_wr_req_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_tbmm/ol_tac_wr/pr2_rd_req_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_tbmm/ol_tac_wr/pr1_rd_req_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/RX_FIFO_IERBUF.IC_REG_IER_I_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ic/ERR_INJ_DIS.DO_BIT_STUFFING_T_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXI_LITE_INST.axi4_lite_i/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXI_LITE_INST.axi4_lite_i/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXI_LITE_INST.axi4_lite_i/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXI_LITE_INST.axi4_lite_i/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\can_inst/ol /\ol_tbmm/ol_tbs/RUNNING_ID_LOC_reg_d1_reg[9] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1115.973 ; gain = 447.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-6837] The timing for the instance inst/gen_fifo_rx0.u_rxxpm_1/xpm_memory_base_inst/i_1/gen_wr_a.gen_word_narrow.mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/gen_fifo_rx0.u_rxxpm_1/xpm_memory_base_inst/i_1/gen_wr_a.gen_word_narrow.mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/gen_rx1.u_rxxpm_2/xpm_memory_base_inst/i_1/gen_wr_a.gen_word_narrow.mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/gen_rx1.u_rxxpm_2/xpm_memory_base_inst/i_1/gen_wr_a.gen_word_narrow.mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/u_txxpm_1/xpm_memory_base_inst/i_1/gen_wr_a.gen_word_narrow.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/u_txxpm_2/xpm_memory_base_inst/i_1/gen_wr_a.gen_word_narrow.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/can_inst/ol/olglue/xpm_cdc_async_rst_inst_1/src_arst' to pin 'inst/can_inst/ol/i_137/i_1267/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/can_inst/ol/olglue/xpm_cdc_async_rst_inst_2/src_arst' to pin 'inst/can_inst/ol/olglue/src_arst0_inferred/i_0/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 1115.973 ; gain = 447.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/\can_inst/ol /\olglue/src_arst0_inferred /i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/\can_inst/ol /i_137/i_1267' with timing assertions on output pin 'O'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/\can_inst/ol /\olglue/src_arst0_inferred /i_0' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/\can_inst/ol /i_137/i_1267' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1311.004 ; gain = 642.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/\can_inst/ol/olglue/src_arst0 ' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/i_1400' with timing assertions on output pin 'O'
+INFO: [Synth 8-3886] merging instance 'inst/can_inst/ol/ol_tbmm/tx_event_fifo_cntl/wr_index_gray_reg_reg[0]' (FDR) to 'inst/can_inst/ol/ol_tbmm/tx_event_fifo_cntl/wr_index_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/wr_index_gray_reg_reg[0]' (FDR) to 'inst/can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/wr_index_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/can_inst/ol/ol_rbmm/GEN_FIFO_1_CNTL.rxmsg_fifo_cntl_1/wr_index_gray_reg_reg[0]' (FDR) to 'inst/can_inst/ol/ol_rbmm/GEN_FIFO_1_CNTL.rxmsg_fifo_cntl_1/wr_index_i_reg[0]'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/\can_inst/ol/olglue/src_arst0 ' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/i_1400' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/\can_inst/ol/olglue/src_arst0 ' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/i_1400' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/\can_inst/ol/olglue/src_arst0 ' with timing assertions on output pin 'O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'inst/i_1400' with timing assertions on output pin 'O'
+INFO: [Synth 8-6837] The timing for the instance inst/gen_fifo_rx0.u_rxxpm_1/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/gen_fifo_rx0.u_rxxpm_1/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/gen_rx1.u_rxxpm_2/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/gen_rx1.u_rxxpm_2/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/u_txxpm_1/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/u_txxpm_2/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 1318.578 ; gain = 650.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_level_out_bus_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_level_out_bus_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_level_out_bus_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_level_out_bus_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_level_out_bus_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/s_level_out_bus_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/p_level_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/p_level_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/p_level_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/p_level_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/p_level_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/p_level_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/DAR_2C_CDC_TO/p_level_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_level_out_bus_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_level_out_bus_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_level_out_bus_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_level_out_bus_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_level_out_bus_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/s_level_out_bus_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/p_level_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/p_level_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/p_level_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/p_level_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/p_level_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/p_level_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/CANCEL_REQ_2C_CDC_TO/p_level_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_level_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_level_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_level_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_level_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_level_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/s_level_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/p_level_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/p_level_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/p_level_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/p_level_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/p_level_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/p_level_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_tbmm/tx_event_fifo_cntl/WR_PTR_2S_CDC_TO/p_level_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/s_level_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d1_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin can_inst/ol/ol_rbmm/GEN_FIFO_CNTL.rxmsg_fifo_cntl/RD_PTR_2C_CDC_TO/p_level_out_d7_inferred:in0 to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1322.426 ; gain = 653.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1322.426 ; gain = 653.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 1322.426 ; gain = 653.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1322.426 ; gain = 653.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1322.426 ; gain = 653.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1322.426 ; gain = 653.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    73|
+|2     |LUT1       |   840|
+|3     |LUT2       |   262|
+|4     |LUT3       |   319|
+|5     |LUT4       |   367|
+|6     |LUT5       |   399|
+|7     |LUT6       |   971|
+|8     |MUXF7      |    10|
+|9     |RAMB36E1   |     4|
+|10    |RAMB36E1_1 |     2|
+|11    |FDCE       |     4|
+|12    |FDRE       |  2187|
+|13    |FDSE       |    66|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1322.426 ; gain = 653.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 624 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:01:32 . Memory (MB): peak = 1322.426 ; gain = 592.820
+Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1322.426 ; gain = 653.941
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1333.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+278 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 1333.113 ; gain = 942.898
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1333.113 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_canfd_0_0_synth_1/Main_Card_canfd_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Main_Card_canfd_0_0, cache-ID = d4d61bdf649170e4
+INFO: [Coretcl 2-1174] Renamed 102 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1333.113 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.runs/Main_Card_canfd_0_0_synth_1/Main_Card_canfd_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_Card_canfd_0_0_utilization_synth.rpt -pb Main_Card_canfd_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 29 20:20:46 2021...

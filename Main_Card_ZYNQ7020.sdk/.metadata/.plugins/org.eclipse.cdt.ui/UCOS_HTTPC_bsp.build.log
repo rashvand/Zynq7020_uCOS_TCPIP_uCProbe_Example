@@ -1,0 +1,6 @@
+19:39:34 **** Build of project ucos_httpc_bsp ****
+make -k all 
+make: *** No rule to make target 'all'.
+
+19:39:34 Build Finished (took 135ms)
+

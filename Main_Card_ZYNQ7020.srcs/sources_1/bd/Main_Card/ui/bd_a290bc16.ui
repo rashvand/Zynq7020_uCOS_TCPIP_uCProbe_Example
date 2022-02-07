@@ -1,0 +1,77 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1280 -y 80 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1280 -y 100 -defaultsOSRD
+preplace port GPIO_0_0 -pg 1 -lvl 4 -x 1280 -y 60 -defaultsOSRD
+preplace port UART_0_0 -pg 1 -lvl 4 -x 1280 -y 120 -defaultsOSRD
+preplace port IIC_0_0 -pg 1 -lvl 4 -x 1280 -y 140 -defaultsOSRD
+preplace port can_phy_rx_0 -pg 1 -lvl 4 -x 1280 -y 1000 -defaultsOSRD -right
+preplace port can_phy_tx_0 -pg 1 -lvl 4 -x 1280 -y 1020 -defaultsOSRD
+preplace port can_phy_rx_1 -pg 1 -lvl 4 -x 1280 -y 800 -defaultsOSRD -right
+preplace port can_phy_tx_1 -pg 1 -lvl 4 -x 1280 -y 820 -defaultsOSRD
+preplace port GPS_TP_0 -pg 1 -lvl 4 -x 1280 -y 1120 -defaultsOSRD -right
+preplace port MISO_0 -pg 1 -lvl 4 -x 1280 -y 1320 -defaultsOSRD -right
+preplace port SYNC_M_0 -pg 1 -lvl 4 -x 1280 -y 1140 -defaultsOSRD
+preplace port SYNC_C_0 -pg 1 -lvl 4 -x 1280 -y 1210 -defaultsOSRD
+preplace port SCK_0 -pg 1 -lvl 4 -x 1280 -y 1230 -defaultsOSRD
+preplace port MOSI_0 -pg 1 -lvl 4 -x 1280 -y 1250 -defaultsOSRD
+preplace port RTC_32768_0 -pg 1 -lvl 4 -x 1280 -y 1340 -defaultsOSRD -right
+preplace port RTC_INT_SQW_0 -pg 1 -lvl 4 -x 1280 -y 1360 -defaultsOSRD -right
+preplace port SPI0_MOSI_O_0 -pg 1 -lvl 4 -x 1280 -y 200 -defaultsOSRD
+preplace port SPI0_MISO_I_0 -pg 1 -lvl 4 -x 1280 -y 220 -defaultsOSRD -right
+preplace port SPI0_SS_O_0 -pg 1 -lvl 4 -x 1280 -y 240 -defaultsOSRD
+preplace port SPI0_SCLK_O_0 -pg 1 -lvl 4 -x 1280 -y 180 -defaultsOSRD
+preplace inst RTC_Synchronizer_0 -pg 1 -lvl 3 -x 1020 -y 1450 -defaultsOSRD
+preplace inst canfd_0 -pg 1 -lvl 3 -x 1020 -y 1000 -defaultsOSRD
+preplace inst canfd_1 -pg 1 -lvl 3 -x 1020 -y 800 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 2 -x 580 -y 1240 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 1020 -y 260 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 580 -y 1000 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 880 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 580 -y 610 -defaultsOSRD
+preplace inst GPS_Synchronizer_0 -pg 1 -lvl 3 -x 1020 -y 1220 -defaultsOSRD
+preplace netloc can_phy_rx_0_1 1 3 1 NJ 1000
+preplace netloc canfd_0_can_phy_tx 1 3 1 NJ 1020
+preplace netloc can_phy_rx_1_1 1 3 1 NJ 800
+preplace netloc canfd_1_can_phy_tx 1 3 1 NJ 820
+preplace netloc clk_wiz_1_clk_80 1 2 2 750 700 1240
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 30 780 380 780 770 -10 1260
+preplace netloc xlconcat_0_dout 1 2 1 730 270n
+preplace netloc canfd_0_ip2bus_intrevent 1 1 3 400 520 780J 540 1260
+preplace netloc canfd_1_ip2bus_intrevent 1 1 3 410 530 NJ 530 1250
+preplace netloc GPS_Synchronizer_0_SYNC_M 1 1 3 410 1180 740 1100 1240
+preplace netloc GPS_Synchronizer_0_SYNC_C 1 3 1 NJ 1210
+preplace netloc GPS_Synchronizer_0_SCK 1 3 1 NJ 1230
+preplace netloc GPS_Synchronizer_0_MOSI 1 3 1 NJ 1250
+preplace netloc MISO_0_1 1 2 2 810 1120 1250J
+preplace netloc GPS_TP_0_1 1 2 2 790 1110 1260J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 20 510 NJ 510 790J 520 1240
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 370 1300 780
+preplace netloc processing_system7_0_SPI0_MOSI_O 1 3 1 NJ 200
+preplace netloc SPI0_MISO_I_0_1 1 3 1 NJ 220
+preplace netloc processing_system7_0_SPI0_SS_O 1 3 1 NJ 240
+preplace netloc processing_system7_0_SPI0_SCLK_O 1 3 1 NJ 180
+preplace netloc RTC_32768_0_1 1 2 2 810 1330 1230J
+preplace netloc RTC_INT_SQW_0_1 1 2 2 800 1320 1240J
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 730 1030n
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ 100
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 760 1010n
+preplace netloc processing_system7_0_GPIO_0 1 3 1 NJ 60
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 390 0 NJ 0 1240
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 970
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 730 770n
+preplace netloc processing_system7_0_IIC_0 1 3 1 NJ 140
+preplace netloc processing_system7_0_DDR 1 3 1 NJ 80
+preplace netloc processing_system7_0_UART_0 1 3 1 NJ 120
+levelinfo -pg 1 0 200 580 1020 1280
+pagesize -pg 1 -db -bbox -sgen 0 -20 1450 1850
+"
+}
+{
+   "da_axi4_cnt":"23",
+   "da_board_cnt":"7",
+   "da_clkrst_cnt":"9",
+   "da_ps7_cnt":"1"
+}

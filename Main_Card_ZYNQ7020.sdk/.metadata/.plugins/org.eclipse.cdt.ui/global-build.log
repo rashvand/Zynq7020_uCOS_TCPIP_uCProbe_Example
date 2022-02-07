@@ -1,0 +1,769 @@
+12:32:56 **** Incremental Build of configuration Debug for project Relay_Main_Card____Core_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:11:21 **** Auto Build of project ucos_openamp_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/canfd_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/canfd_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/GPS_Synchronizer_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/GPS_Synchronizer_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/RTC_Synchronizer_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/RTC_Synchronizer_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/spips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/spips_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_common_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_common_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_emacps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_emacps_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_libmetal_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_libmetal_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_osiii_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_osiii_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_standalone_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_standalone_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_uartps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_uartps_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_usbps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_usbps_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/wdtps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Running Make libs in ps7_cortexa9_0/libsrc/canfd_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/canfd_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling can"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/GPS_Synchronizer_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/GPS_Synchronizer_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling GPS_Synchronizer..."
+GPS_Synchronizer_selftest.c: In function 'GPS_SYNCHRONIZER_Reg_SelfTest':
+GPS_Synchronizer_selftest.c:52:65: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( GPS_SYNCHRONIZER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                 ^~
+GPS_Synchronizer_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/RTC_Synchronizer_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/RTC_Synchronizer_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling RTC_Synchronizer..."
+RTC_Synchronizer_selftest.c: In function 'RTC_SYNCHRONIZER_Reg_SelfTest':
+RTC_Synchronizer_selftest.c:52:65: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( RTC_SYNCHRONIZER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                 ^~
+RTC_Synchronizer_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/spips_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling spips"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_common_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_common_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling uC/OS Common Components"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_emacps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_emacps_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling ucos_usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_libmetal_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_libmetal_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+process_begin: CreateProcess(NULL, D:/Xilinx/SDK/2019.1/tps/win64/cmake-3.3.2/bin/cmake.exe -HD:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_libmetal_v1_45/src/libmetal -BD:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_libmetal_v1_45/build_libmetal --check-build-system CMakeFiles/Makefile.cmake 0, ...) failed.
+make[1]: *** [Makefile:9: libs] Error 2
+make (e=2): The system cannot find the file specified.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/ucos_libmetal_v1_45/src/make.libs] Error 2
+
+make[2]: *** [Makefile:209: cmake_check_build_system] Error 2
+make[2]: Target 'install' not remade because of errors.
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+process_begin: CreateProcess(NULL, D:/Xilinx/SDK/2019.1/tps/win64/cmake-3.3.2/bin/cmake.exe -HD:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/src/open-amp -BD:/Vebko/Relay/Relay_V3.0/Rev.02/Main_Card_Zynq7020/Main/Main_Card_ZYNQ7020/Main_Card_ZYNQ7020.sdk/ucos_openamp_bsp/ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/build_openamp --check-build-system CMakeFiles/Makefile.cmake 0, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make[2]: *** [Makefile:209: cmake_check_build_system] Error 2
+make[1]: *** [Makefile:9: libs] Error 2
+make[2]: Target 'install' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/ucos_openamp_v1_45/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_osiii_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_osiii_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling uC/OS-III"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_standalone_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_standalone_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_uartps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_uartps_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling ucos_emacps"
+ucos_uartps.c: In function 'UARTPS_BaudRateSet':
+ucos_uartps.c:468:19: warning: 'best_baud_rate_gen' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uart_ps->BAUD = best_baud_rate_gen;
+     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+ucos_uartps.c:469:23: warning: 'best_baud_div' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uart_ps->BAUD_DIV = best_baud_div;
+     ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_usbps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_usbps_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling ucos_usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling uC/OS"
+"Running Make libs in ps7_cortexa9_0/libsrc/wdtps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling wdtps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -DUNDEFINE_FILE_OPS"
+"Compiling xadcps"
+make: Target 'all' not remade because of errors.
+10:12:02 **** Auto Build of configuration Debug for project ucos_openamp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helper.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ucos_openamp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helper.d" -MT"src/helper.o" -o "src/helper.o" "../src/helper.c"
+'Finished building: ../src/helper.c'
+' '
+'Building file: ../src/platform_info.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_info.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ucos_openamp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_info.d" -MT"src/platform_info.o" -o "src/platform_info.o" "../src/platform_info.c"
+'Finished building: ../src/platform_info.c'
+' '
+'Building file: ../src/rpmsg-echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rpmsg-echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ucos_openamp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rpmsg-echo.d" -MT"src/rpmsg-echo.o" -o "src/rpmsg-echo.o" "../src/rpmsg-echo.c"
+../src/rpmsg-echo.c: In function 'MainTask':
+../src/rpmsg-echo.c:102:20: warning: passing argument 1 of 'platform_init' makes integer from pointer without a cast [-Wint-conversion]
+  if (platform_init(NULL, NULL, &platform)) {
+                    ^~~~
+In file included from ../src/rpmsg-echo.c:9:
+../src/platform_info.h:57:23: note: expected 'int' but argument is of type 'void *'
+ int platform_init(int argc, char *argv[], void **platform);
+                   ~~~~^~~~
+'Finished building: ../src/rpmsg-echo.c'
+' '
+'Building file: ../src/rsc_table.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rsc_table.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ucos_openamp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsc_table.d" -MT"src/rsc_table.o" -o "src/rsc_table.o" "../src/rsc_table.c"
+'Finished building: ../src/rsc_table.c'
+' '
+'Building file: ../src/zynq_a9_rproc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zynq_a9_rproc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ucos_openamp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zynq_a9_rproc.d" -MT"src/zynq_a9_rproc.o" -o "src/zynq_a9_rproc.o" "../src/zynq_a9_rproc.c"
+'Finished building: ../src/zynq_a9_rproc.c'
+' '
+'Building target: ucos_openamp.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ucos_openamp_bsp/ps7_cortexa9_0/lib -o "ucos_openamp.elf"  ./src/helper.o ./src/platform_info.o ./src/rpmsg-echo.o ./src/rsc_table.o ./src/zynq_a9_rproc.o   -Wl,--start-group,-lucos,-lgcc,-lc,--end-group -Wl,--start-group,-lucos,-lxil,-lmetal,-lopen_amp,-lgcc,-lc,--end-group -Wl,--start-group,-lucos,-lxil,-lmetal,-lgcc,-lc,--end-group -Wl,--start-group,-lucos,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ucos_openamp.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ucos_openamp.elf  |tee "ucos_openamp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 137928	1052252	  38544	1228724	 12bfb4	ucos_openamp.elf
+'Finished building: ucos_openamp.elf.size'
+' '
+10:15:31 **** Auto Build of project UCOS_V1_50_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/canfd_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/canfd_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/GPS_Synchronizer_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/GPS_Synchronizer_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/RTC_Synchronizer_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/RTC_Synchronizer_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/spips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/spips_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_common_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_common_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_dns-c_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_dns-c_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_emacps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_emacps_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_osiii_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_osiii_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_standalone_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_standalone_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_tcpip_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_tcpip_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_uartps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_uartps_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_usbps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_usbps_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ucos_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_v1_45/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/wdtps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/canfd_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/canfd_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling can"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/GPS_Synchronizer_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/GPS_Synchronizer_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling GPS_Synchronizer..."
+GPS_Synchronizer_selftest.c: In function 'GPS_SYNCHRONIZER_Reg_SelfTest':
+GPS_Synchronizer_selftest.c:52:65: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( GPS_SYNCHRONIZER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                 ^~
+GPS_Synchronizer_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/RTC_Synchronizer_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/RTC_Synchronizer_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling RTC_Synchronizer..."
+RTC_Synchronizer_selftest.c: In function 'RTC_SYNCHRONIZER_Reg_SelfTest':
+RTC_Synchronizer_selftest.c:52:65: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( RTC_SYNCHRONIZER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                 ^~
+RTC_Synchronizer_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/spips_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling spips"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_common_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_common_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uC/OS Common Components"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_dns-c_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_dns-c_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uC/DNSc"
+"Building uC/DNSc from sources at E:/Working/Micrium/Zynq/ucos_v1_50/micrium_source/uC-DNSc"
+uC-DNSc/Source/dns-c_cache.c: In function 'DNScCache_Resolve':
+uC-DNSc/Source/dns-c_cache.c:2170:49: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+                  if ((p_host->NameLenMax - len) <= DNSc_REVERSE_MAPPING_DOMAIN_IPv4_STR_LEN) {
+                                                 ^~
+uC-DNSc/Source/dns-c_cache.c: In function 'DNScCache_ResolveHost':
+uC-DNSc/Source/dns-c_cache.c:1228:12: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     return (status);
+            ^
+uC-DNSc/Source/dns-c_req.c: In function 'DNScReq_RxRespMsg':
+uC-DNSc/Source/dns-c_req.c:1077:57: warning: unused parameter 'resp_msg_len' [-Wunused-parameter]
+                                         CPU_INT16U      resp_msg_len,
+                                         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+uC-DNSc/Source/dns-c_req.c: In function 'DNScReq_RxResp':
+uC-DNSc/Source/dns-c_req.c:1321:68: warning: 'append_len' may be used uninitialized in this function [-Wmaybe-uninitialized]
+                  if ((is_compressed == DEF_TRUE) && ((hostname_len + append_len) < p_host->NameLenMax)) {
+                                                      ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+uC-DNSc/Source/dns-c_req.c:1257:21: note: 'append_len' was declared here
+     CPU_INT08U      append_len;
+                     ^~~~~~~~~~
+uC-DNSc/Source/dns-c_req.c:1276:40: warning: 'p_addr' may be used uninitialized in this function [-Wmaybe-uninitialized]
+            *(CPU_INT32U *)p_addr->Addr = NET_UTIL_NET_TO_HOST_32(*(CPU_INT32U *)p_addr->Addr);
+uC-DNSc/Source/dns-c_req.c:1250:21: note: 'p_addr' was declared here
+     DNSc_ADDR_OBJ  *p_addr;
+                     ^~~~~~
+uC-DNSc/Source/dns-c_task.c: In function 'DNScTask_Init':
+uC-DNSc/Source/dns-c_task.c:103:45: warning: unused parameter 'p_task_cfg' [-Wunused-parameter]
+                      const  DNSc_CFG_TASK  *p_task_cfg,
+                      ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+uC-DNSc/Source/dns-c_task.c:104:45: warning: unused parameter 'p_err' [-Wunused-parameter]
+                             DNSc_ERR       *p_err)
+                             ~~~~~~~~~~~~~~~~^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_emacps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_emacps_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ucos_usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_osiii_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_osiii_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uC/OS-III"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_standalone_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_standalone_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_tcpip_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_tcpip_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uC/TCP-IP"
+"Building uC/TCP-IP from sources at E:/Working/Micrium/Zynq/ucos_v1_50/micrium_source/uC-TCPIP"
+uC-TCPIP/Source/net_bsd.c: In function 'getaddrinfo':
+uC-TCPIP/Source/net_bsd.c:2885:21: warning: value computed is not used [-Wunused-value]
+                     *p_dns_host_tbl++;
+                     ^~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_bsd.c: In function 'getnameinfo':
+uC-TCPIP/Source/net_bsd.c:3118:15: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+     if (flags > NET_BSD_NI_MAX_FLAG) {
+               ^
+uC-TCPIP/Source/net_bsd.c:3129:26: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+              if (addrlen < NET_IPv4_ADDR_LEN) {
+                          ^
+uC-TCPIP/Source/net_bsd.c:3176:21: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+         if (hostlen > 0u) {                                     /* ------------------ DNS RESOLUTION ------------------ */
+                     ^
+uC-TCPIP/Source/net_bsd.c:3230:53: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+     if ((p_service_name != DEF_NULL) && (servicelen > 0u)) {
+                                                     ^
+uC-TCPIP/Source/net_bsd.c: In function 'gethostname':
+uC-TCPIP/Source/net_bsd.c:3393:27: warning: unused parameter 'host_name' [-Wunused-parameter]
+ int  gethostname (char   *host_name,
+                   ~~~~~~~~^~~~~~~~~
+uC-TCPIP/Source/net_bsd.c:3394:27: warning: unused parameter 'name_len' [-Wunused-parameter]
+                  _size_t  name_len)
+                  ~~~~~~~~~^~~~~~~~
+uC-TCPIP/Source/net_bsd.c: In function 'sethostname':
+uC-TCPIP/Source/net_bsd.c:3461:34: warning: unused parameter 'host_name' [-Wunused-parameter]
+ int  sethostname(const  char    *host_name,
+                  ~~~~~~~~~~~~~~~~^~~~~~~~~
+uC-TCPIP/Source/net_bsd.c:3462:34: warning: unused parameter 'name_len' [-Wunused-parameter]
+                        _size_t   name_len)
+                        ~~~~~~~~~~^~~~~~~~
+uC-TCPIP/Source/net_sock.c: In function 'NetSock_BindHandler':
+uC-TCPIP/Source/net_sock.c:14408:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+              if (p_addr_remote != (CPU_INT08U *)0) {             /* ... but remote addr avail (see Note #8b2), ...       */
+                 ^
+uC-TCPIP/Source/net_sock.c:14414:9: note: here
+         case NET_CONN_ERR_CONN_FULL:                            /* If  fully conn'd sock found; ...                     */
+         ^~~~
+uC-TCPIP/Source/net_tcp.c: In function 'NetTCP_RxPktValidate':
+uC-TCPIP/Source/net_tcp.c:7739:51: warning: unused parameter 'p_buf' [-Wunused-parameter]
+ static  void  NetTCP_RxPktValidate (NET_BUF      *p_buf,
+                                     ~~~~~~~~~~~~~~^~~~~
+uC-TCPIP/Source/net_tcp.c: In function 'NetTCP_TxPktPrepareHdr':
+uC-TCPIP/Source/net_tcp.c:29706:58: warning: unused parameter 'p_src_addr' [-Wunused-parameter]
+                                       void              *p_src_addr,
+                                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:29708:58: warning: unused parameter 'p_dest_addr' [-Wunused-parameter]
+                                       void              *p_dest_addr,
+                                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c: In function 'NetTCP_RxPktConnHandler':
+uC-TCPIP/Source/net_tcp.c:8506:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8510:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8556:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8560:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8607:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8611:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8658:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8662:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8728:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8732:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8784:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8788:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8827:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8831:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8882:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8886:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8925:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8929:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c:8978:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                       NetTCP_RxPktFree(p_buf);
+                       ^~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:8982:18: note: here
+                  case NET_TCP_ERR_CONN_DATA_VALID:
+                  ^~~~
+uC-TCPIP/Source/net_tcp.c: In function 'NetTCP_RxPktConnIsValidAck':
+uC-TCPIP/Source/net_tcp.c:17803:21: warning: this statement may fall through [-Wimplicit-fallthrough=]
+                  if (p_buf_hdr->TCP_SegAck == DEF_NO) {         /* If NO ack rx'd, ...                                  */
+                     ^
+uC-TCPIP/Source/net_tcp.c:17809:13: note: here
+             case NET_TCP_CONN_STATE_SYNC_RXD:                   /* See Note #1c1B.                                      */
+             ^~~~
+uC-TCPIP/Source/net_tcp.c: In function 'NetTCP_TxConnRTT_RTO_Calc':
+uC-TCPIP/Source/net_tcp.c:27926:14: warning: this statement may fall through [-Wimplicit-fallthrough=]
+              NetTCP_TxConnRTO_CalcUpdate_ms(p_conn);
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+uC-TCPIP/Source/net_tcp.c:27930:9: note: here
+         case NET_TCP_CONN_TX_RTT_RESET:                         /* See Note #2a4.                                       */
+         ^~~~
+uC-TCPIP/Source/net_tcp.c: In function 'NetTCP_TxConnWinSizeHandlerCfgd':
+uC-TCPIP/Source/net_tcp.c:18921:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+              if (p_conn->TxWinSizeCfgdRem < win_update_size) {  /* If rem cfg'd win size < win update, ...              */
+                 ^
+uC-TCPIP/Source/net_tcp.c:18928:9: note: here
+         case NET_TCP_CONN_TX_WIN_INC:
+         ^~~~
+uC-TCPIP/Source/net_tcp.c: In function 'NetTCP_ConnIdleTimeout':
+uC-TCPIP/Source/net_tcp.c:30241:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+              if (p_conn->TxKeepAliveEn == DEF_ENABLED) {        /* If en'd, ...                                         */
+                 ^
+uC-TCPIP/Source/net_tcp.c:30251:9: note: here
+         case NET_TCP_CONN_STATE_SYNC_RXD:
+         ^~~~
+uC-TCPIP/Source/net_udp.c: In function 'NetUDP_RxPktValidate':
+uC-TCPIP/Source/net_udp.c:1857:51: warning: unused parameter 'p_buf' [-Wunused-parameter]
+ static  void  NetUDP_RxPktValidate (NET_BUF      *p_buf,
+                                     ~~~~~~~~~~~~~~^~~~~
+uC-TCPIP/Source/net_udp.c: In function 'NetUDP_TxPktPrepareHdr':
+uC-TCPIP/Source/net_udp.c:2815:58: warning: unused parameter 'p_src_addr' [-Wunused-parameter]
+                                       void              *p_src_addr,
+                                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+uC-TCPIP/Source/net_udp.c:2817:58: warning: unused parameter 'p_dest_addr' [-Wunused-parameter]
+                                       void              *p_dest_addr,
+                                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+uC-TCPIP/Source/net_udp.c:2819:58: warning: unused parameter 'flags_udp' [-Wunused-parameter]
+                                       NET_UDP_FLAGS      flags_udp,
+                                       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+uC-TCPIP/IF/net_if.c: In function 'NetIF_TxPktDiscard':
+uC-TCPIP/IF/net_if.c:7834:19: warning: 'if_nbr' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     NET_IF_NBR    if_nbr;
+                   ^~~~~~
+uC-TCPIP/IF/net_if.c: In function 'NetIF_RxPktDiscard':
+uC-TCPIP/IF/net_if.c:6758:19: warning: 'if_nbr' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     NET_IF_NBR    if_nbr;
+                   ^~~~~~
+In file included from uC-TCPIP/IF/../Source/net_stat.h:49,
+                 from uC-TCPIP/IF/../Source/net_buf.h:49,
+                 from uC-TCPIP/IF/net_if.h:60,
+                 from uC-TCPIP/IF/net_if.c:50:
+uC-TCPIP/IF/net_if.c: In function 'NetIF_RxTaskHandler':
+uC-TCPIP/IF/../Source/net_ctr.h:1435:70: warning: 'size' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define  NET_CTR_ADD(ctr, val)                            do { (ctr) += (val); } while (0)
+                                                                      ^~
+uC-TCPIP/IF/net_if.c:6360:20: note: 'size' was declared here
+     NET_BUF_SIZE   size;
+                    ^~~~
+uC-TCPIP/IP/IPv4/net_icmpv4.c: In function 'NetICMPv4_RxPktValidate':
+uC-TCPIP/IP/IPv4/net_icmpv4.c:1465:57: warning: unused parameter 'p_buf' [-Wunused-parameter]
+ static  void  NetICMPv4_RxPktValidate (NET_BUF         *p_buf,
+                                        ~~~~~~~~~~~~~~~~~^~~~~
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c: In function 'NetDev_Rx':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1224:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+    *p_data = (CPU_INT08U *)(addr & GEM_RXBUF_ADDR_MASK);        /* Return a pointer to the newly received data area.    */
+              ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1229:36: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         pdesc->Addr = (CPU_INT32U)((CPU_INT64U)(void *)pbuf_new & GEM_RXBUF_ADDR_MASK) | GEM_RXBUF_ADDR_OWN | GEM_RXBUF_ADDR_WRAP;
+                                    ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1231:36: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         pdesc->Addr = (CPU_INT32U)((CPU_INT64U)(void *)pbuf_new & GEM_RXBUF_ADDR_MASK) | GEM_RXBUF_ADDR_OWN;
+                                    ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1233:36: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdesc->AddrHigh = (CPU_INT32U)((CPU_INT64U)(void *)pbuf_new >> 32u); /* Update the high-order address word.                  */
+                                    ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c: In function 'NetDev_Tx':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1307:36: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdesc->Addr     = (CPU_INT32U)((CPU_INT64U)(void *)p_data &  GEM_TXBUF_ADDR_MASK);
+                                    ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1308:36: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdesc->AddrHigh = (CPU_INT32U)((CPU_INT64U)(void *)p_data >>                 32u);
+                                    ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1315:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdev->TX_QBAR              = (CPU_INT32U)((CPU_INT64U)(void *)pdev_data->TxRingHead);
+                                               ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1316:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdev->UPPER_TX_Q_BASE_ADDR = (CPU_INT32U)((CPU_INT64U)(void *)pdev_data->TxRingHead >> 32u);
+                                               ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c: In function 'NetDev_RxDescInit':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1407:40: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         pdesc->Addr     = (CPU_INT32U)((CPU_INT64U)p_buf &  ~GEM_RXBUF_ADDR_OWN);
+                                        ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1408:40: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+         pdesc->AddrHigh = (CPU_INT32U)((CPU_INT64U)p_buf >>                 32u);
+                                        ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1418:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdev->RX_QBAR              = (CPU_INT32U)((CPU_INT64U)(void *)pdev_data->RxBufDescPtrStart);
+                                               ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1419:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdev->UPPER_RX_Q_BASE_ADDR = (CPU_INT32U)((CPU_INT64U)(void *)pdev_data->RxBufDescPtrStart >> 32u);
+                                               ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c: In function 'NetDev_RxDescFreeAll':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1468:22: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         pdesc_data = (CPU_INT08U *)(((CPU_INT64U)pdesc->AddrHigh << 32u) | (pdesc->Addr & GEM_RXBUF_ADDR_MASK));
+                      ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c: In function 'NetDev_TxDescInit':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1561:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdev->TX_QBAR              = (CPU_INT32U)((CPU_INT64U)(void *)pdev_data->TxRingHead);
+                                               ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1562:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     pdev->UPPER_TX_Q_BASE_ADDR = (CPU_INT32U)((CPU_INT64U)(void *)pdev_data->TxRingHead >> 32u);
+                                               ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c: In function 'NetDev_TxDescFreeAll':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1618:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         NetIF_TxDeallocTaskPost((CPU_INT08U *)(((CPU_INT64U)pdesc->AddrHigh << 32u) | pdesc->Addr), &err);
+                                 ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c: In function 'NetDev_PriQDescInit':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1702:27: warning: assignment to 'CPU_REG32' {aka 'volatile unsigned int'} from 'DEV_DESC *' {aka 'struct dev_desc *'} makes integer from pointer without a cast [-Wint-conversion]
+     pdev->TRANSMIT_Q1_PTR = pdesc;
+                           ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1708:26: warning: assignment to 'CPU_REG32' {aka 'volatile unsigned int'} from 'DEV_DESC *' {aka 'struct dev_desc *'} makes integer from pointer without a cast [-Wint-conversion]
+     pdev->RECEIVE_Q1_PTR = pdesc;
+                          ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:1676:25: warning: unused variable 'i' [-Wunused-variable]
+     CPU_INT16U          i;
+                         ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c: In function 'NetDev_ISR_Handler':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:2053:22: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+             p_data = (CPU_INT08U *)(((CPU_INT64U)pdesc->AddrHigh << 32u) | pdesc->Addr);
+                      ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:2066:44: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             pdesc->Addr     = (CPU_INT32U)((CPU_INT64U)tx_buf_q.DataPtr & GEM_TXBUF_ADDR_MASK);
+                                            ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:2067:44: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             pdesc->AddrHigh = (CPU_INT32U)((CPU_INT64U)tx_buf_q.DataPtr >> 32u);
+                                            ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:2080:55: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             pdev->TX_QBAR              = (CPU_INT32U)((CPU_INT64U)(void *)pdev_data->TxRingHead);
+                                                       ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64.c:2081:55: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             pdev->UPPER_TX_Q_BASE_ADDR = (CPU_INT32U)((CPU_INT64U)(void *)pdev_data->TxRingHead >> 32u);
+                                                       ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64_32.c: In function 'NetDev_PriQDescInit':
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64_32.c:1703:27: warning: assignment to 'CPU_REG32' {aka 'volatile unsigned int'} from 'DEV_DESC *' {aka 'struct dev_desc *'} makes integer from pointer without a cast [-Wint-conversion]
+     pdev->TRANSMIT_Q1_PTR = pdesc;
+                           ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64_32.c:1709:26: warning: assignment to 'CPU_REG32' {aka 'volatile unsigned int'} from 'DEV_DESC *' {aka 'struct dev_desc *'} makes integer from pointer without a cast [-Wint-conversion]
+     pdev->RECEIVE_Q1_PTR = pdesc;
+                          ^
+uC-TCPIP/Dev/Ether/GEM/net_dev_gem64_32.c:1677:25: warning: unused variable 'i' [-Wunused-variable]
+     CPU_INT16U          i;
+                         ^
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c: In function 'NetDev_Init':
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:431:25: warning: variable 'pdev' set but not used [-Wunused-but-set-variable]
+     NET_DEV            *pdev;
+                         ^~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c: In function 'NetDev_Rx':
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:867:25: warning: unused variable 'cnt' [-Wunused-variable]
+     CPU_INT16U          cnt;
+                         ^~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:865:25: warning: unused variable 'rx_crc' [-Wunused-variable]
+     CPU_BOOLEAN         rx_crc;
+                         ^~~~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c: In function 'NetDev_Tx':
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1075:24: warning: comparison of integer expressions of different signedness: 'CPU_INT32U' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+         for (i = 0u; i < ((size / 4) + 1); i++) {               /* Copy transmit data.                                  */
+                        ^
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1085:24: warning: comparison of integer expressions of different signedness: 'CPU_INT32U' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+         for (i = 0u; i < ((size / 4) + 1); i++) {
+                        ^
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1061:25: warning: variable 'tx_status' set but not used [-Wunused-but-set-variable]
+     CPU_INT32U          tx_status;
+                         ^~~~~~~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1059:25: warning: unused variable 'cnt' [-Wunused-variable]
+     CPU_INT16U          cnt;
+                         ^~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c: In function 'NetDev_AddrMulticastAdd':
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1137:53: warning: unused parameter 'pif' [-Wunused-parameter]
+ static  void  NetDev_AddrMulticastAdd (NET_IF      *pif,
+                                        ~~~~~~~~~~~~~^~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1138:53: warning: unused parameter 'paddr_hw' [-Wunused-parameter]
+                                        CPU_INT08U  *paddr_hw,
+                                        ~~~~~~~~~~~~~^~~~~~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1139:53: warning: unused parameter 'addr_hw_len' [-Wunused-parameter]
+                                        CPU_INT08U   addr_hw_len,
+                                        ~~~~~~~~~~~~~^~~~~~~~~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c: In function 'NetDev_AddrMulticastRemove':
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1178:56: warning: unused parameter 'pif' [-Wunused-parameter]
+ static  void  NetDev_AddrMulticastRemove (NET_IF      *pif,
+                                           ~~~~~~~~~~~~~^~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1179:56: warning: unused parameter 'paddr_hw' [-Wunused-parameter]
+                                           CPU_INT08U  *paddr_hw,
+                                           ~~~~~~~~~~~~~^~~~~~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1180:56: warning: unused parameter 'addr_hw_len' [-Wunused-parameter]
+                                           CPU_INT08U   addr_hw_len,
+                                           ~~~~~~~~~~~~~^~~~~~~~~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c: In function 'NetDev_ISR_Handler':
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1230:25: warning: unused variable 'reg_val' [-Wunused-variable]
+     CPU_DATA            reg_val;
+                         ^~~~~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1225:54: warning: unused parameter 'type' [-Wunused-parameter]
+                                   NET_DEV_ISR_TYPE   type)
+                                   ~~~~~~~~~~~~~~~~~~~^~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c: In function 'NetDev_IO_Ctrl':
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1329:26: warning: unused variable 'spd' [-Wunused-variable]
+     CPU_INT16U           spd;
+                          ^~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1328:26: warning: unused variable 'duplex' [-Wunused-variable]
+     CPU_INT16U           duplex;
+                          ^~~~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1326:26: warning: variable 'pdev' set but not used [-Wunused-but-set-variable]
+     NET_DEV             *pdev;
+                          ^~~~
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c: In function 'NetDev_MII_Rd':
+uC-TCPIP/Dev/Ether/XIL_ETHER_LITE/net_dev_xil_ether_lite.c:1422:20: warning: 'timeout' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         if (timeout-- == 0) {
+             ~~~~~~~^~
+uC-TCPIP/Dev/Ether/PHY/DP83867IR/net_phy_dp83867ir.c: In function 'NetPhy_LinkStateGet':
+uC-TCPIP/Dev/Ether/PHY/DP83867IR/net_phy_dp83867ir.c:598:39: warning: bitwise comparison always evaluates to false [-Wtautological-compare]
+         if ((reg_val & BMCR_SPEEDMSB) == 1u) {                  /* Determine spd.                                       */
+                                       ^~
+uC-TCPIP/Dev/Ether/PHY/DP83867IR/net_phy_dp83867ir.c:600:28: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+         } else if (reg_val & BMCR_SPEEDLSB == 1u) {
+                            ^
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_uartps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_uartps_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ucos_emacps"
+ucos_uartps.c: In function 'UARTPS_BaudRateSet':
+ucos_uartps.c:468:19: warning: 'best_baud_rate_gen' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uart_ps->BAUD = best_baud_rate_gen;
+     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+ucos_uartps.c:469:23: warning: 'best_baud_div' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uart_ps->BAUD_DIV = best_baud_div;
+     ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_usbps_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_usbps_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ucos_usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/ucos_v1_45/src"
+make -C ps7_cortexa9_0/libsrc/ucos_v1_45/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uC/OS"
+ucos_tcpip_init.c: In function 'UCOS_TCPIP_IF_Cfg':
+ucos_tcpip_init.c:262:1: warning: label 'cfg_done' defined but not used [-Wunused-label]
+ cfg_done:
+ ^~~~~~~~
+ucos_tcpip_init.c:181:24: warning: unused variable 'cfg_success' [-Wunused-variable]
+     CPU_BOOLEAN        cfg_success;
+                        ^~~~~~~~~~~
+ucos_tcpip_init.c: In function 'UCOS_TCPIP_IfCfgInit':
+ucos_tcpip_init.c:361:5: warning: implicit declaration of function 'Str_Copy_N'; did you mean 'Mem_Copy'? [-Wimplicit-function-declaration]
+     Str_Copy_N(Cfg->HW_AddrStr, UCOS_IF_HW_ADDR, 17);
+     ^~~~~~~~~~
+     Mem_Copy
+ucos_tcpip_init.c: In function 'UCOS_TCPIP_PhyCfgInit':
+ucos_tcpip_init.c:428:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+"Running Make libs in ps7_cortexa9_0/libsrc/wdtps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling wdtps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
