@@ -1,2 +1,2 @@
-# Zynq7020 uCOS TCPIP uCProbe Example
+# Zynq7020 Micrium uCOS TCPIP uCProbe Example
  
